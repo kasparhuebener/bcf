@@ -1,276 +1,298 @@
 <!doctype html>
 <html lang="de-DE">
 <head>
-	<meta charset="utf-8">
-	<title>Berlin Circus Festival, 04.-13.09. in der Schatzinsel Berlin</title>
+		<meta charset="utf-8">
+		<title>Berlin Circus Festival, 04.-13.09. in der Schatzinsel Berlin</title>
 
-	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="semantic/dist/semantic.js"></script>
-	<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="style.css" media="screen">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="semantic/dist/semantic.js"></script>
+		<script src="script.js"></script>
+
+    <link rel="stylesheet" href="flickity.css" media="screen">
+    <script src="flickity.pkgd.min.js"></script>
 </head>
 <body>
-	<header class="ui inverted segment top sidebar">
-		<h1>
-			Berlin Circus Festival
-			<span class="time">
-				<time datetime="2015-09-04 20:00">04.09.</time> - 
-				<time datetime="2015-09-13 20:00">13.09. 2015</time>
-			</span>
-			<span class="location">
-				Schatzinsel Berlin
-			</span>
-		</h1>
-		<nav id="main-nav" class="ui inverted secondary menu" role="navigation">
-			<a href="#festival" title="Mehr über das Festival" class="item" >Festival</a>
-			<a href="#artists" title="Mehr über die Künstler" class="item" >Künstler</a>
-			<a href="#tickets" title="Wo gibts Tickets?" class="item">Tickets</a>
-			<a href="#contact" title="Kontakt zum Veranstalter" class="item" >Kontakt</a>
-		</nav>
-		<nav id="side-nav" class="ui inverted text menu">
-			<a href="#" class="item">DE</a>
-			<a href="#" class="item">EN</a>
-			<a href="#" class="item">_f_</a>
-		</nav>
-	</header>
-	<main>
-		<div id="intro">
-			<div id="intro-container" class="ui stackable page grid">
-				<div class="row">
-					<div class="eight wide column">
-						<a href="#festival">
-							<img id="logo" class="ui centered image" src="assets/images/logo.png" title="Berlin Circus Festival">
-						</a>
-					</div>
-					<div class="eight wide column">
-						<nav id="intro-nav">
-							<ol>
-								<li><a href="#festival" title="Mehr über das Festival">Festival</a></li>
-								<li><a href="#artists" title="Mehr über die Künstler">Künstler</a></li>
-								<li><a href="#tickets" title="Wo gibts Tickets?">Tickets</a></li>
-								<li><a href="#contact" title="Kontakt zum Veranstalter">Kontakt</a></li>
-							</ol>
-						</nav>
-					</div>
+		<header class="ui inverted segment top sidebar">
+				<h1>
+						Berlin Circus Festival
+						<span class="time">
+								<time datetime="2015-09-04 20:00">04.09.</time> - 
+								<time datetime="2015-09-13 20:00">13.09. 2015</time>
+						</span>
+						<span class="location">
+								Schatzinsel Berlin
+						</span>
+				</h1>
+				<nav id="main-nav" class="ui inverted secondary menu" role="navigation">
+						<a href="#festival" title="Mehr über das Festival" class="item" >Festival</a>
+						<a href="#artists" title="Mehr über die Künstler" class="item" >Künstler</a>
+						<a href="#tickets" title="Wo gibts Tickets?" class="item">Tickets</a>
+						<a href="#contact" title="Kontakt zum Veranstalter" class="item" >Kontakt</a>
+				</nav>
+				<nav id="side-nav" class="ui inverted text menu">
+						<a href="#" class="item">DE</a>
+						<a href="#" class="item">EN</a>
+						<a href="#" class="item">_f_</a>
+				</nav>
+		</header>
+		<main>
+				<div id="intro">
+						<div id="intro-container" class="ui stackable page grid">
+								<div class="row">
+										<div class="eight wide column">
+												<a href="#festival">
+														<img id="logo" class="ui centered image" src="assets/images/logo.png" title="Berlin Circus Festival">
+												</a>
+										</div>
+										<div class="eight wide column">
+												<nav id="intro-nav">
+														<ol>
+																<li><a href="#festival" title="Mehr über das Festival">Festival</a></li>
+																<li><a href="#artists" title="Mehr über die Künstler">Künstler</a></li>
+																<li><a href="#tickets" title="Wo gibts Tickets?">Tickets</a></li>
+																<li><a href="#contact" title="Kontakt zum Veranstalter">Kontakt</a></li>
+														</ol>
+												</nav>
+										</div>
+								</div>
+						</div>
 				</div>
-			</div>
-		</div>
-		<section id="festival" class="ui segment">
-			<div class="ui stackable centered grid">
-				<div class="center aligned eight wide column">
-					<h1>Festival</h1>
-					<p>
-						Das 1. Berlin Circus Festival
-					</p>
-					<p>
-						präsentiert euch
-					</p>
-					<p>
-						10 Tage mit jungen, internationalen Künstlern, ein Open-Air für zeitgenössischen Circus im Herzen von Berlin.
-					</p>
-					<p>
-						Wir zeigen euch spektakuläre & renommierte Produktionen aus ganz Europa. Das Berlin Circus Festival holt den zeitgenössischen Circus, welcher im Ausland die Zuschauer begeistert und große Anerkennung genießt, nun endlich auch nach Berlin.   
-					</p>	
-					<p>
-						Der Ort, eine Oase in der Großstadt – Eine Location zum Erleben, Verweilen und Genießen, direkt am Schlesischen Tor. 
-					</p>
+        <div class="gallery js-flickity"
+        data-flickity-options='{
+            "cellSelector": ".cell",
+            "setGallerySize": false, 
+            "wrapAround": true, 
+            "autoPlay": 4000
+        }'>
+            <div class="cell">
+                <img src="assets/images/test1.jpg">
+            </div>
+            <div class="cell">
+                <img src="assets/images/slapstick02.jpg">
+            </div>
+            <div class="cell">
+                <img src="assets/images/slapstick03.jpg">
+            </div>
+            <div class="cell">
+                <img src="assets/images/artist2.jpg">
+            </div>
+            <div class="cell">
+                <img src="assets/images/slapstick04.jpg">
+            </div>
+            <section id="festival">
+              <h1>Festival</h1>
+              <p>
+                  Das 1. Berlin Circus Festival
+              </p>
+              <p>
+                  präsentiert euch
+              </p>
+              <p>
+                  10 Tage mit jungen, internationalen Künstlern, ein Open-Air für zeitgenössischen Circus im Herzen von Berlin.
+              </p>
+              <p>
+                  Wir zeigen euch spektakuläre & renommierte Produktionen aus ganz Europa. Das Berlin Circus Festival holt den zeitgenössischen Circus, welcher im Ausland die Zuschauer begeistert und große Anerkennung genießt, nun endlich auch nach Berlin.   
+              </p>
+              <p>
+                  Der Ort, eine Oase in der Großstadt – Eine Location zum Erleben, Verweilen und Genießen, direkt am Schlesischen Tor. 
+              </p>
+            </section>
+        </div>
+				<section id="artists" class="ui segment">
+						<div class="ui stackable grid">
+								<div class="column">
+										<h1>Künstler</h1>
+										<div class="ui cards">
+												<a class="ui card">
+													<div class="image">
+														<img src="assets/images/slapstick01.jpg">
+													</div>
+													<div class="content">
+														<p class="header">Cirk la Putyka</p>
+														<div class="meta">
+															<span>Prag, CZ</span>
+														</div>
+														<div class="description">
+															In Slapstick Sonata bringt Cirk la Putyka zeitgenössische Themen in die Herzen der Zuschauer.
+														</div>
+													</div>
+													<div class="extra content">
+														<i class="time icon"></i>
+														<span>04.09. - 06.09.</span>
+													</div>
+												</a>
+												<a class="ui card">
+													<div class="image">
+														<img src="assets/images/artist2.jpg">
+													</div>
+													<div class="content">
+														<p class="header">Ulf & Zwulf</p>
+														<div class="meta">
+															<span>Oslo, NO & Malmö, SWE</span>
+														</div>
+														<div class="description">
+															Der grüne Panda zeigt Chinas Bestrebungen im Umweltschutz von einer ganz neuen Seite.
+														</div>
+													</div>
+													<div class="extra content">
+														<i class="time icon"></i>
+														<span>11.09. - 13.09.</span>
+													</div>
+												</a>
+										</div>
+								</div>
+						</div>
+				</section>
+				<section id="tickets" class="ui inverted red segment">
+				<div class="ui stackable grid">
+						<div class="column">
+								<h1>Tickets</h1>
+								<div class="ui icon warning message">
+										<i class="sun icon"></i>
+										<div class="content">
+												<div class="header">Sonnenscheintickets - was ist das?</div>
+												<p>Wenn die Sonne rauskommt, kommst Du rein.</p>
+										</div>
+								</div>
+								<table class="ui very basic large table">
+										<thead>
+												<tr>
+														<th>Wann?</th>
+														<th>Was?</th>
+														<th>Tickets</th>
+												</tr>
+										</thead>
+										<tbody>
+												<tr>
+														<td>04.09.2015 19.30</td>
+														<td>Cirk La Putyka (CZ) - Slapstick Sonata</td>
+														<td>
+																<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
+																<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
+														</td>
+												</tr>
+												<tr>
+														<td>05.09.2015 19.30</td>
+														<td>Cirk La Putyka (CZ) - Slapstick Sonata</td>
+														<td>
+																<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
+																<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
+														</td>
+												</tr>
+												<tr>
+														<td>06.09.2015 19.30</td>
+														<td>Cirk La Putyka (CZ) - Slapstick Sonata</td>
+														<td>
+																<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
+																<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
+														</td>
+												</tr>
+												<tr>
+														<td>07.09.2015 19.30</td>
+														<td>Open Stage</td>
+														<td>
+																Tickets für 3,50 € an der Abendkasse
+														</td>
+												</tr>
+												<tr>
+														<td>08.09.2015 19.30</td>
+														<td>Plateau partagé<abbr title="to be confirmed">*</abbr></td>
+														<td>
+																<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
+																<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
+														</td>
+												</tr>
+												<tr>
+														<td>09.09.2015 19.30</td>
+														<td>Plateau partagé<abbr title="to be confirmed">*</abbr></td>
+														<td>
+																<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
+																<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
+														</td>
+												</tr>
+												<tr>
+														<td>10.09.2015 19.30</td>
+														<td>Präsentation Work-in-Progress</td>
+														<td>
+																Tickets für 3,50 € an der Abendkasse
+														</td>
+												</tr>
+												<tr>
+														<td>11.09.2015 19.30</td>
+														<td>Ulf & Zwulf (NO, SWE) - the green Panda</td>
+														<td>
+																<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
+																<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
+														</td>
+												</tr>
+												<tr>
+														<td>12.09.2015 19.30</td>
+														<td>Ulf & Zwulf (NO, SWE) - the green Panda</td>
+														<td>
+																<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
+																<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
+														</td>
+												</tr>
+												<tr>
+														<td>13.09.2015 19.30</td>
+														<td>Ulf & Zwulf (NO, SWE) - the green Panda</td>
+														<td>
+																<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
+																<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
+														</td>
+												</tr>
+										</tbody>
+								</table>
+								<p>
+										* Zum Plateau partagé präsentiert das <abbr title="Berlin Circus Festival">BCF</abbr> einen abwechslungsreichen Abend mit je drei 20-minütigen Shows der Circuskunst (FR, IRE, DE). 
+								</p>
+						</div>
 				</div>
-			</div>
-		</section>
-		<section id="artists" class="ui segment">
-			<div class="ui stackable grid">
-				<div class="column">
-					<h1>Künstler</h1>
-					<div class="ui cards">
-						<a class="ui card">
-						  <div class="image">
-						    <img src="assets/images/slapstick01.jpg">
-						  </div>
-						  <div class="content">
-						    <p class="header">Cirk la Putyka</p>
-						    <div class="meta">
-						      <span>Prag, CZ</span>
-						    </div>
-						    <div class="description">
-						      In Slapstick Sonata bringt Cirk la Putyka zeitgenössische Themen in die Herzen der Zuschauer.
-						    </div>
-						  </div>
-						  <div class="extra content">
-						    <i class="time icon"></i>
-						    <span>04.09. - 06.09.</span>
-						  </div>
-						</a>
-						<a class="ui card">
-						  <div class="image">
-						    <img src="assets/images/artist2.jpg">
-						  </div>
-						  <div class="content">
-						    <p class="header">Ulf & Zwulf</p>
-						    <div class="meta">
-						      <span>Oslo, NO & Malmö, SWE</span>
-						    </div>
-						    <div class="description">
-						      Der grüne Panda zeigt Chinas Bestrebungen im Umweltschutz von einer ganz neuen Seite.
-						    </div>
-						  </div>
-						  <div class="extra content">
-						    <i class="time icon"></i>
-						    <span>11.09. - 13.09.</span>
-						  </div>
-						</a>
-					</div>
+				</section>
+				<section id="contact" class="ui green inverted segment">
+						<div class="ui stackable grid">
+								<div class="centered eight wide column">
+										<h1>Kontakt</h1>
+										<p>
+												Das Berlin Circus Festival wird veranstaltet von der Berlin Circus Production - Koelbel Hilliger GbR. Diese erreicht ihr unter office@berlin-circus-production.com.
+										</p>
+										<p>
+												Wir freuen uns auf eure Fragen, Feedback, Ideen,Sponsorenanfragen.
+										</p>
+								</div>
+						</div>
+				</section>
+		</main>
+		<footer class="ui inverted segment">
+				<div class="ui stackable centered grid">
+						<div class="eight wide column">
+								<address>
+										© 2015 Berlin Circus Production
+								</address>
+								<a href="#">Impressum</a>
+								<a href="privacy.html" title="Datenschutz">Datenschutz</a>  
+						</div>
+						<aside class="centered row">
+								<div class="two wide column">
+								<img class="ui tiny image" src="assets/images/image.png">
+								Sponsor 1
+						</div>
+						<div class="two wide column">
+								<img class="ui tiny image" src="assets/images/image.png">
+								Sponsor 2
+						</div>
+						<div class="two wide column">
+								<img class="ui tiny image" src="assets/images/image.png">
+								Sponsor 3
+						</div>
+						<div class="two wide column">
+								<img class="ui tiny image" src="assets/images/image.png">
+								Sponsor 4
+						</div>  
+						</aside>
 				</div>
-			</div>
-		</section>
-		<section id="tickets" class="ui inverted red segment">
-		<div class="ui stackable grid">
-			<div class="column">
-				<h1>Tickets</h1>
-				<div class="ui icon warning message">
-					<i class="sun icon"></i>
-					<div class="content">
-						<div class="header">Sonnenscheintickets - was ist das?</div>
-						<p>Wenn die Sonne rauskommt, kommst Du rein.</p>
-					</div>
-				</div>
-				<table class="ui very basic large table">
-					<thead>
-						<tr>
-							<th>Wann?</th>
-							<th>Was?</th>
-							<th>Tickets</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>04.09.2015 19.30</td>
-							<td>Cirk La Putyka (CZ) - Slapstick Sonata</td>
-							<td>
-								<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
-								<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
-							</td>
-						</tr>
-						<tr>
-							<td>05.09.2015 19.30</td>
-							<td>Cirk La Putyka (CZ) - Slapstick Sonata</td>
-							<td>
-								<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
-								<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
-							</td>
-						</tr>
-						<tr>
-							<td>06.09.2015 19.30</td>
-							<td>Cirk La Putyka (CZ) - Slapstick Sonata</td>
-							<td>
-								<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
-								<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
-							</td>
-						</tr>
-						<tr>
-							<td>07.09.2015 19.30</td>
-							<td>Open Stage</td>
-							<td>
-								Tickets für 3,50 € an der Abendkasse
-							</td>
-						</tr>
-						<tr>
-							<td>08.09.2015 19.30</td>
-							<td>Plateau partagé<abbr title="to be confirmed">*</abbr></td>
-							<td>
-								<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
-								<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
-							</td>
-						</tr>
-						<tr>
-							<td>09.09.2015 19.30</td>
-							<td>Plateau partagé<abbr title="to be confirmed">*</abbr></td>
-							<td>
-								<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
-								<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
-							</td>
-						</tr>
-						<tr>
-							<td>10.09.2015 19.30</td>
-							<td>Präsentation Work-in-Progress</td>
-							<td>
-								Tickets für 3,50 € an der Abendkasse
-							</td>
-						</tr>
-						<tr>
-							<td>11.09.2015 19.30</td>
-							<td>Ulf & Zwulf (NO, SWE) - the green Panda</td>
-							<td>
-								<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
-								<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
-							</td>
-						</tr>
-						<tr>
-							<td>12.09.2015 19.30</td>
-							<td>Ulf & Zwulf (NO, SWE) - the green Panda</td>
-							<td>
-								<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
-								<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
-							</td>
-						</tr>
-						<tr>
-							<td>13.09.2015 19.30</td>
-							<td>Ulf & Zwulf (NO, SWE) - the green Panda</td>
-							<td>
-								<a class="ui disabled button" href="http://www.koka36.de/event_site.php?event=63630" title="Tickets bei KOKA36">Tickets sichern</a>
-								<a class="ui disabled button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<p>
-					* Zum Plateau partagé präsentiert das <abbr title="Berlin Circus Festival">BCF</abbr> einen abwechslungsreichen Abend mit je drei 20-minütigen Shows der Circuskunst (FR, IRE, DE). 
-				</p>
-			</div>
-		</div>
-		</section>
-		<section id="contact" class="ui green inverted segment">
-			<div class="ui stackable grid">
-				<div class="centered eight wide column">
-					<h1>Kontakt</h1>
-					<p>
-						Das Berlin Circus Festival wird veranstaltet von der Berlin Circus Production - Koelbel Hilliger GbR. Diese erreicht ihr unter office@berlin-circus-production.com.
-					</p>
-					<p>
-						Wir freuen uns auf eure Fragen, Feedback, Ideen,Sponsorenanfragen.
-					</p>
-				</div>
-			</div>
-		</section>
-	</main>
-	<footer class="ui inverted segment">
-		<div class="ui stackable centered grid">
-			<div class="eight wide column">
-				<address>
-					© 2015 Berlin Circus Production
-				</address>
-				<a href="#">Impressum</a>
-				<a href="privacy.html" title="Datenschutz">Datenschutz</a>	
-			</div>
-			<aside class="centered row">
-				<div class="two wide column">
-				<img class="ui tiny image" src="assets/images/image.png">
-				Sponsor 1
-			</div>
-			<div class="two wide column">
-				<img class="ui tiny image" src="assets/images/image.png">
-				Sponsor 2
-			</div>
-			<div class="two wide column">
-				<img class="ui tiny image" src="assets/images/image.png">
-				Sponsor 3
-			</div>
-			<div class="two wide column">
-				<img class="ui tiny image" src="assets/images/image.png">
-				Sponsor 4
-			</div>	
-			</aside>
-		</div>
-	</footer>
+		</footer>
 </body>
 </html>

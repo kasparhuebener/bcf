@@ -80,6 +80,43 @@ body {
 	transform: translateY(0);
 }
 
+#festival {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	background-color: hsla(0,0%,50%,0.5);
+	color: white;
+
+	height: 40rem;
+	width: 40rem;
+	margin-top: -20rem;
+	margin-left: -20rem;
+  	padding: 4em;
+  	text-align: center;
+  	border-radius: 100%;
+  	border: none;
+}
+#festival:after {
+	content: '';
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
+.gallery {
+    height: 600px;
+    width: 100% ;
+}
+.cell {
+    height: 100%;
+}
+.cell img {
+    height: 100%;
+    width: auto;
+}
+
 section.ui.segment,
 footer.ui.segment {
 	border-radius: 0;
