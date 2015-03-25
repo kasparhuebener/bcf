@@ -24,6 +24,11 @@ body {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+@media only screen and (max-width: 767px) {
+	#intro-nav {
+		text-align: center;
+	}
+}
 #intro-nav li {
 	list-style: none;
 	margin-bottom: 1rem;
