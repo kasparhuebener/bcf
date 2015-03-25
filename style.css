@@ -9,7 +9,7 @@ body {
 	background-size: cover;
 }
 #intro {
-	min-height: 40em; 
+	min-height: 50em; 
 }
 #logo {
 	width: 30rem;
@@ -92,7 +92,7 @@ body {
 	width: 40rem;
 	margin-top: -20rem;
 	margin-left: -20rem;
-  	padding: 4em;
+  	padding: 3em;
   	text-align: center;
   	border-radius: 100%;
   	border: none;
