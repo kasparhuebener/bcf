@@ -1,7 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700);
+@import url(http://fonts.googleapis.com/css?family=Old+Standard+TT);
+
+html, body {
+	font-family: 'Old Standard TT';
+}
+
 #side-nav {
-	position: fixed;
-	top: 0;
-	right: 0;
+	
+}
+#header {
+	padding: 0;
+}
+#header h1 {
+	margin: 1.2rem 0 1rem;
+	text-align: center;
+}
+#header h1 span {
+	display: inline-block;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 body {
@@ -9,18 +27,29 @@ body {
 	background-size: cover;
 }
 #intro {
-	position: relative;
 }
 #intro-container {
-	padding-top: 10%;
 }
 #intro-details {
+	width: 100%;
+	background-color: black;
+	line-height: 2.5em;
 	position: absolute;
+	z-index: 1;
+	text-align: center;
 	bottom: 0;
-	height: 3em;
-	font-size: 3em;
+	height: 2.5em;
+	font-size: 2em;
 	color: white;
 	font-weight: 700;
+}
+#intro-details span.time {
+	float: left;
+	width: 40%;
+}
+#intro-details span.location {
+	float: right;
+	width: 40%;
 }
 #logo {
 	opacity: 0.8;

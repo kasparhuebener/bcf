@@ -1,0 +1,58 @@
+header
+[ ] links türkis/orange
+[ ] header türkis?
+[ ] struktur rein
+[ ] überschrift auf ganze breite
+[ ] links selber effekt wie intro
+[ ] links etwas breiter
+[ ] BCF in die mitte und groß :)
+
+
+intro
+[x] selbe höhe
+[x] anfang der lines sollte sichtbar sein
+[ ] schrift!
+[ ] links eventuell im hintergrund geschrammelt.
+
+
+festival
+[x] überschrift raus
+[x] text größer
+[ ] ort rein
+[ ] nicht selbes bild wie oben
+[ ] besonderes darf hervorgehoben werden, nicht nur zahlen
+
+anfahrt:
+ubahn und tram
+eingang köpenicker str 2-4
+google karte
+
+generelle farben:
+türkis
+orange
+rot
+
+
+[x] künstler —> programm
+[ ] hintergrund dunkel? und mit bild?
+[x] keine beschreibungstexte
+[ ] + 3 weitere künstler
+[ ] + YOU?
+[ ] überschrift ist die show, nicht die compagnie
+
+
+tickets
+[ ] sonnenschein-hinweis nur im popup
+[ ] popup
+
+
+kontakt
+[ ] kein grün
+[ ] emailadresse, firma, fotos
+
+
+footer
+[ ] netzwerk-partner logos hinzufügen
+
+google sektionen und sublinks - wie warum?
+google analytics
