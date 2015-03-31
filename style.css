@@ -1,6 +1,19 @@
 @import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
 
+.segment.bcf-color1 {
+	background-color: #24e1da;
+	background-color: hsl(176, 72%, 50.9804%);
+}
+.segment.bcf-color2 {
+	background-color: #dcaf28;
+	background-color: hsl(45, 72%, 50.9804%);
+}
+.segment.bcf-color3 {
+	background-color: #cd454a;
+	background-color: hsl(358, 57%, 53.7255%);
+}
+
 html, body {
 	font-family: 'Playfair Display';
 }
@@ -36,7 +49,7 @@ body {
 }
 #intro-details {
 	width: 100%;
-	background-color: black;
+	background-color: #1b1c1d;
 	line-height: 2.5em;
 	position: absolute;
 	z-index: 1;

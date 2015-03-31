@@ -11,8 +11,8 @@ header
 intro
 [x] selbe höhe
 [x] anfang der lines sollte sichtbar sein
-[ ] schrift!
-[ ] links eventuell im hintergrund geschrammelt.
+[x] schrift!
+[-] links eventuell im hintergrund geschrammelt.
 
 
 festival
@@ -28,9 +28,9 @@ eingang köpenicker str 2-4
 google karte
 
 generelle farben:
-türkis
-orange
-rot
+[x] türkis
+[x] orange
+[x] rot
 
 
 [x] künstler —> programm
