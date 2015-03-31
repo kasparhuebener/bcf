@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 body {
-	background: url("assets/images/test4.jpg") no-repeat center bottom fixed;
+	background: url("assets/images/bg_30.jpg") no-repeat center bottom fixed;
 	background-size: cover;
 }
 #intro {
