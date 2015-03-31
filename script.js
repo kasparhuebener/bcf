@@ -8,7 +8,7 @@ window.onresize = function(event) {
 
 function resizeDiv() {
 	vpw = $(window).width();
-	vph = $(window).height();
+	vph = $(window).height() - 20;
 	$('#intro').css({'height': vph + 'px'});
 	$('.gallery').css({'height': vph + 'px'});
 }
