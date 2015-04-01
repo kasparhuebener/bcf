@@ -13,7 +13,6 @@ function resizeDiv() {
 	$('.gallery').css({'height': vph + 'px'});
 }
 
-
 $(document).scroll(function() {
   //Show element after user scrolls 800px
   var y = $(this).scrollTop();

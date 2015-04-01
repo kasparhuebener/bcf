@@ -2,10 +2,10 @@ header
 [ ] links türkis/orange
 [ ] header türkis?
 [ ] struktur rein
-[ ] überschrift auf ganze breite
+[x] überschrift auf ganze breite
 [ ] links selber effekt wie intro
-[ ] links etwas breiter
-[ ] BCF in die mitte und groß :)
+[x] links etwas breiter
+[x] BCF in die mitte und groß :)
 
 
 intro

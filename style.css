@@ -20,7 +20,9 @@ html, body {
 h1,h2,h3,h4,h5,h6,
 #intro {
 }
-
+#main-nav.ui.menu {
+	margin-bottom: 0.3rem;
+}
 #main-nav.ui.menu .item {
 	font-size: 1.3rem;
 }
@@ -52,10 +54,10 @@ h1,h2,h3,h4,h5,h6,
 }
 
 body {
-	background: url("assets/images/bg_30.jpg") no-repeat center bottom fixed;
-	background-size: cover;
 }
 #intro {
+	background: url("assets/images/bg_30.jpg") no-repeat center center;
+	background-size: 1600px;
 }
 #intro-container {
 	padding-top: 5%;
@@ -194,35 +196,40 @@ footer.ui.segment {
 }
 
 @media only screen and (max-width: 767px) {
-	section.ui.segment {
+	section.ui.segment,
+	footer.ui.segment {
 		padding-left: 0em;
 		padding-right: 0em;
 	}
 }
 
 @media only screen and (min-width: 768px) {
-	section.ui.segment {
+	section.ui.segment,
+	footer.ui.segment {
 		padding-left: 4em;
 		padding-right: 4em;
 	}
 }
 
 @media only screen and (min-width: 992px) {
-	section.ui.segment {
+	section.ui.segment,
+	footer.ui.segment {
 		padding-left: 8%;
 		padding-right: 8%;
 	}
 }
 
 @media only screen and (min-width: 1400px) {
-	section.ui.segment {
+	section.ui.segment,
+	footer.ui.segment {
 		padding-left: 15%;
 		padding-right: 15%;
 	}
 }
 
 @media only screen and (min-width: 1920px) {
-	section.ui.segment {
+	section.ui.segment,
+	footer.ui.segment {
 		padding-left: 23%;
 		padding-right: 23%;
 	}
