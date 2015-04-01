@@ -1,5 +1,14 @@
 $(document).ready(function(){
 	resizeDiv();
+
+  $('#support-btn').click(function() {
+    $('#support-modal')
+      .modal('show');
+  });
+  $('#location-btn').click(function() {
+    $('#location-modal')
+      .modal('show');
+  });
 });
 
 window.onresize = function(event) {
