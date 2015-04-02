@@ -147,7 +147,9 @@ h1,h2,h3,h4,h5,h6,
 	background-size: 1600px;
 }
 #intro-container {
-	padding-top: 110px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 #logo {
 	opacity: 0.8;
@@ -169,12 +171,17 @@ h1,h2,h3,h4,h5,h6,
 	#intro-nav {
 		text-align: center;
 	}
+	#intro-nav li {
+		padding: 0;
+	}
+}
+#intro-nav ol {
+	padding: 0;
 }
 #intro-nav li {
 	list-style: none;
-	margin-bottom: 1rem;
 	padding-left: 4rem;
-
+	margin-bottom: 1rem;
 }
 #intro-nav a {
 	font-size: 3rem;

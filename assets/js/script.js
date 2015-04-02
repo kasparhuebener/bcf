@@ -81,6 +81,7 @@ $(document).scroll(function() {
   if (y > 500) {
     $('header.sidebar')
       .sidebar('setting','dimPage', false)
+      .sidebar('setting','closable', false)
       .sidebar('show')
     ;
   } else {
