@@ -288,9 +288,9 @@ h1,h2,h3,h4,h5,h6,
 	background: black url("assets/images/bg_program_black.jpg") no-repeat center center;
 	background-size: cover;
 }
-.ui.card:hover {
-	background-color: #24e1da;
+#program .ui.card:hover {
 	background-color: hsl(176, 72%, 50.9804%);
+	background-color: hsl(45, 72%, 50.9804%);
 }
 
 #festival-container,
