@@ -16,25 +16,32 @@
 </head>
 <body>
 	<header id="header" class="ui inverted segment top sidebar">
-		<h1>
-			<span class="time">
-				<time datetime="2015-09-04 20:00">04.09.</time> - 
-				<time datetime="2015-09-13 20:00">13.09.15</time>
-			</span>
-			<span class="name">
+		<div class="header-container">
+			<h1>
 				Berlin Circus Festival
-			</span>
-			<span class="location">
-				Circus Schatzinsel
+			<span class="subheader clearfix">
+				<span class="time">
+					<time datetime="2015-09-04 20:00">04.</time> - 
+					<time datetime="2015-09-13 20:00">13.09.15</time>
+				</span>
+				<span class="location">
+					Circus Schatzinsel
+				</span>
 			</span>
 		</h1>
-		<nav id="main-nav" class="ui inverted secondary menu" role="navigation">
-			<a href="#festival" title="Mehr über das Festival" class="item" >Festival</a>
-			<a href="#program" title="Mehr über Programm und Künstler" class="item" >Programm</a>
-			<a href="#tickets" title="Wo gibts Tickets?" class="item">Tickets</a>
-			<a href="#contact" title="Kontakt zum Veranstalter" class="item" >Kontakt</a>
-			<a href="https://www.facebook.com/pages/Berlin-Circus-Festival/669500923158454" class="item" title="Zu unserer Facebook-Page"><i class="facebook icon"></i></a>
+		</div>
+		<div class="nav-container clearfix">
+			<nav id="main-nav" class="ui secondary menu" role="navigation">
+				<a href="#festival" title="Mehr über das Festival" class="item" >Festival</a>
+				<a href="#program" title="Mehr über Programm und Künstler" class="item" >Programm</a>
+				<a href="#tickets" title="Wo gibts Tickets?" class="item">Tickets</a>
+				<a href="#contact" title="Kontakt zum Veranstalter" class="item" >Kontakt</a>
+				<div class="ui right menu">
+					<a href="https://www.facebook.com/pages/Berlin-Circus-Festival/669500923158454" class="item" title="Zu unserer Facebook-Page"><i class="facebook icon"></i></a>
+			</div>
+			</nav>
 		</nav>
+		</div>
 	</header>
 	<main>
 		<div id="intro">
@@ -58,16 +65,13 @@
 				</div>
 			</div>
 			<div id="intro-details">
-				—
 				<span class="time">
 					<time datetime="2015-09-04 20:00">04.</time> - 
 					<time datetime="2015-09-13 20:00">13.09. 2015</time>
 				</span>
-				•
 				<span class="location">
 					Circus Schatzinsel Berlin
 				</span>
-				—
 			</div>
 		</div>
 		<div id="festival-container" class="gallery js-flickity"
@@ -129,7 +133,7 @@
 					Bar & Grill auf dem Gelände,<br>
 					Shows ab 19.30 Uhr.
 				</p>
-				<div id="support-btn" class="ui red button">
+				<div id="support-btn" class="ui bcf-color3 button">
 					Werde Supporter
 				</div>
 				<div id="support-modal" class="ui modal">
@@ -139,11 +143,11 @@
 				  </div>
 				  <div class="content">
 				    <div class="image">
-				      An image can appear on left or an icon
+				      <i class="icon announcement"></i>
 				    </div>
 				    <div class="description">
 				    	<p>
-				      		Um den zeitgenössischen Circus und seine Künstler nach Berlin zu bringen, brauchen wir den Rückhalt der Stadt und seiner Bürger.
+				      		Um den zeitgenössischen Circus und seine Künstler nach Berlin zu bringen, brauchen wir den Rückhalt der Stadt und seiner Bewohner.
 				      	</p>
 				      	<p>
 				      		Wir sind auf der Suche nach Veranstaltern, Gastronomen, kräftigen Helfern oder einfach netten Menschen, die einen Schlafplatz anbieten können.
@@ -157,7 +161,7 @@
 				    <div class="ui button">Schließen</div>
 				  </div>
 				</div>
-				<div id="location-btn" class="ui red button">
+				<div id="location-btn" class="ui bcf-color3 button">
 					Anfahrt
 				</div>
 				<div id="location-modal" class="ui modal">

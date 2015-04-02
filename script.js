@@ -19,7 +19,6 @@ function resizeDiv() {
 	vpw = $(window).width();
 	vph = $(window).height();
 	$('#intro').css({'height': vph + 'px'});
-  $('#intro-container').css({'height': vph + 'px'});
 	$('.gallery').css({'height': vph + 'px'});
 }
 
