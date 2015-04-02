@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
 
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
 section.ui.segment,
 footer.ui.segment {
 	border-radius: 0;
@@ -7,6 +15,15 @@ footer.ui.segment {
 	padding-left: 8%;
 	padding-right: 8%;
 	padding-bottom: 8%;
+}
+
+#header,
+footer.ui.inverted.segment {
+	background-color: #0f201f !important;
+}
+footer.ui.inverted.segment {
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 
 @media only screen and (max-width: 767px) {
@@ -87,9 +104,7 @@ h1,h2,h3,h4,h5,h6,
 .header-container h1 {
 	margin: 0;
 }
-.unstyled-link {
-	color: inherit;
-}
+.unstyled-link,
 .unstyled-link:hover,
 .unstyled-link:focus {
 	color: inherit;
@@ -99,9 +114,7 @@ h1,h2,h3,h4,h5,h6,
 	font-size: 0.5em;
 	line-height: 1em;
 }
-.subheader::after {
-	content: '';
-}
+
 .subheader .location {
 	display: inline-block;
 	float: right;
@@ -113,7 +126,6 @@ h1,h2,h3,h4,h5,h6,
 .nav-container {
 	vertical-align: bottom;
 	display: inline-block;
-	padding-left: 1em;
 	width: 600px;
 }
 .nav-container .ui.menu {
@@ -133,15 +145,8 @@ h1,h2,h3,h4,h5,h6,
 	background-color: hsl(45, 72%, 50.9804%);
 }
 
-.time + .location::before {
-	content: '•';
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
 #intro {
 	height: 100%;
-	min-height: 300px;
 	position: relative;
 	background: url("assets/images/bg_30.jpg") no-repeat center center;
 	background-size: 1600px;
@@ -149,12 +154,13 @@ h1,h2,h3,h4,h5,h6,
 #intro-container {
 	position: relative;
 	top: 50%;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
+	/* add webkit transforms */
 }
 #logo {
 	opacity: 0.8;
-	width: 450px;
-	min-width: 200px !important;
+	width: 90%;
 }
 #logo:hover {
 	-webkit-filter: hue-rotate(240deg);
@@ -214,7 +220,7 @@ h1,h2,h3,h4,h5,h6,
 #intro-nav a::before {
 	opacity: 0.8;
 
-	content: "";
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -253,6 +259,11 @@ h1,h2,h3,h4,h5,h6,
 	background: linear-gradient(to top,  rgba(0,0,0,1.00) 0%,rgba(0,0,0,0) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
 }
+.time + .location::before {
+	content: '•';
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
 #intro-details span.time::before {
 	content: '—';
 	padding-right: 1rem;
@@ -273,20 +284,13 @@ h1,h2,h3,h4,h5,h6,
 	width: 50rem;
 	margin-top: -25rem;
 	margin-left: -25rem;
-}
-.clearfix::after {
-	content: '';
-	display: block;
-	height: 0px;
-	clear: both;
-	visibility: hidden;
+	/* add grid to festival */
 }
 
 .gallery {
 	background-color: black;
     height: 100%;
     width: 100% ;
-    min-height: 300px;
 }
 .cell {
     height: 100%;
@@ -309,9 +313,13 @@ h1,h2,h3,h4,h5,h6,
 #program .ui.cards a.ui.card:hover {
 	-webkit-transition: none;
 	transition: none;
-	background-color: hsl(176, 72%, 50.9804%);
 	background-color: hsl(45, 72%, 50.9804%);
 	box-shadow: 0px 3px 0px 0px hsl(45, 72%, 40.9804%), 0px 0px 0px 1px hsl(45, 72%, 50.9804%);
+}
+
+#tickets .button {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
 }
 
 #festival-container,
@@ -320,13 +328,4 @@ h1,h2,h3,h4,h5,h6,
 #contact {
 	box-shadow: none;
 	border-bottom: 1px solid #d4d4d5;
-}
-
-#header,
-footer.ui.inverted.segment {
-	background-color: #0f201f !important;
-}
-footer.ui.inverted.segment {
-	padding-top: 4em;
-	padding-bottom: 4em;
 }

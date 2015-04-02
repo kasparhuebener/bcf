@@ -9,6 +9,26 @@ $(document).ready(function(){
     $('#location-modal')
       .modal('show');
   });
+  $('#artist1-btn').click(function() {
+    $('#artist1')
+      .modal('show');
+  });
+  $('#artist2-btn').click(function() {
+    $('#artist2')
+      .modal('show');
+  });
+  $('#artist3-btn').click(function() {
+    $('#artist3')
+      .modal('show');
+  });
+  $('#artist4-btn').click(function() {
+    $('#artist4')
+      .modal('show');
+  });
+  $('#artist5-btn').click(function() {
+    $('#artist5')
+      .modal('show');
+  });
 
   $('#festival-container').flickity({
     // options
