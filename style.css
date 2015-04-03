@@ -87,7 +87,8 @@ footer.ui.inverted.segment {
 }
 
 h1,h2,h3,h4,h5,h6,
-#intro {
+#intro,
+.ui.modal > .header {
 	font-family: "Abril Fatface";
 }
 #header {
@@ -154,9 +155,11 @@ h1,h2,h3,h4,h5,h6,
 #intro-container {
 	position: relative;
 	top: 50%;
+	-o-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	/* add webkit transforms */
 }
 #logo {
 	opacity: 0.8;
@@ -273,18 +276,39 @@ h1,h2,h3,h4,h5,h6,
 	content: '—';
 }
 
+/* add modernizr or viewport rule */
 #festival {
+	position: relative;
+}
+#festival-bg {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+	background: black url("assets/images/slideshow/01_Tanter_Vixen_02.jpg") no-repeat center right;
+	background-size: cover;
+}
+
+#festival-text {
+	position: relative;
 	z-index: 1;
 	color: white;
-	font-size: 120%;
-	height: 50rem;
-	width: 50rem;
-	margin-top: -25rem;
-	margin-left: -25rem;
-	/* add grid to festival */
+	top: 50%;
+	-o-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	/* text-shadow: 0px 0px 3px black; */
+	-webkit-user-select: text;
+  	-moz-user-select: text;
+  	-ms-user-select: text;
+  	user-select: text;
+}
+#festival-text .ui.grid > .column:not(.row) p {
+	font-size: 1.15rem;
+
 }
 
 .gallery {
@@ -317,12 +341,22 @@ h1,h2,h3,h4,h5,h6,
 	box-shadow: 0px 3px 0px 0px hsl(45, 72%, 40.9804%), 0px 0px 0px 1px hsl(45, 72%, 50.9804%);
 }
 
+
+.ui.modal > .header {
+	text-shadow: none;
+}
+
+span.copyright {
+	display: inline-block;
+	margin-top: 0.5em;
+}
+
 #tickets .button {
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 }
 
-#festival-container,
+#festival,
 #program,
 #tickets,
 #contact {
