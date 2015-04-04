@@ -91,6 +91,7 @@ window.onresize = function(event) {
 	resizeDiv();
 }
 
+/* necessary for big screens, not necessary for iphone */
 function resizeDiv() {
 	vpw = $(window).width();
 	vph = $(window).height();

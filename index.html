@@ -91,7 +91,7 @@
 							<img id="logo" class="ui centered image" src="assets/images/logo.png" title="Berlin Circus Festival">
 						</a>
 					</div>
-					<div class="two wide column"></div>
+					<div class="two wide column invisible-mobile"></div>
 					<div class="seven wide column">
 						<nav id="intro-nav">
 							<ol>
@@ -140,9 +140,15 @@
 							Bar & Grill auf dem Gelände,<br>
 							Shows ab 19.30 Uhr.
 						</p>
-						<div id="support-btn" class="ui bcf-color3 button">
-							<i class="add user icon"></i>
-							Werde Supporter
+						<div class="buttons">
+							<div id="support-btn" class="ui bcf-color3 button">
+								<i class="add user icon"></i>
+								Werde Supporter
+							</div>
+							<div id="location-btn" class="ui bcf-color3 button">
+								<i class="marker icon"></i>
+								Anfahrt
+							</div>
 						</div>
 						<div id="support-modal" class="ui small modal">
 							<i class="close icon"></i>
@@ -170,10 +176,6 @@
 								<div class="ui button">OK</div>
 							</div>
 						</div>
-						<div id="location-btn" class="ui bcf-color3 button">
-							<i class="marker icon"></i>
-							Anfahrt
-						</div>
 						<div id="location-modal" class="ui modal">
 							<i class="close icon"></i>
 							<div class="header">
@@ -181,20 +183,21 @@
 								Anfahrt
 							</div>
 							<div class="content">
-								<div class="image">
-									<p>
-										<strong>Circus Schatzinsel Berlin</strong>
-									</p>
-									Eingang:<br>
-									Köpenicker Straße 2-4<br>
-									10997 Berlin<br>
-								</p>
-								<p>
-									U-Bhf Schlesisches Tor U1
-								</p>
+								<div class="ui big image">
+									<img class="ui image" src="https://maps.googleapis.com/maps/api/staticmap?center=52.501744,13.441199&zoom=15&size=600x300&markers=52.501744,13.441199" title="Circus Schatzinsel Berlin in der Köpenicker Str. 2-4, 10997 Berlin">
 							</div>
 							<div class="description">
-								<img src="https://maps.googleapis.com/maps/api/staticmap?center=52.501744,13.441199&zoom=15&size=400x300&markers=52.501744,13.441199" title="" width="400" height="300">
+								<p>
+										<strong>Circus Schatzinsel Berlin</strong>
+									</p>
+									<i class="location arrow icon"></i>Eingang:<br>
+									<i class="icon"></i>Köpenicker Straße 2-4<br>
+									<i class="icon"></i>10997 Berlin<br>
+								</p>
+								<p>
+									<i class="subway icon"></i>
+									U-Bhf Schlesisches Tor U1
+								</p>
 							</div>
 						</div>
 						<div class="actions">
@@ -590,7 +593,7 @@
 	</div>
 </section>
 </main>
-<footer class="ui inverted segment">
+<footer id="footer" class="ui inverted segment">
 	<div class="ui stackable inverted divided relaxed grid">
 		<div class="three wide column">
 			<div class="ui inverted link list">

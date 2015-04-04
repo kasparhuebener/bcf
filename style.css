@@ -9,7 +9,7 @@
 }
 
 section.ui.segment,
-footer.ui.segment {
+#footer {
 	border-radius: 0;
 	margin: 0em auto;
 	padding-left: 8%;
@@ -18,53 +18,12 @@ footer.ui.segment {
 }
 
 #header,
-footer.ui.inverted.segment {
+#footer {
 	background-color: #0f201f !important;
 }
-footer.ui.inverted.segment {
+#footer {
 	padding-top: 4em;
 	padding-bottom: 4em;
-}
-
-@media only screen and (max-width: 767px) {
-	section.ui.segment,
-	footer.ui.segment,
-	#header {
-		padding-left: 0em;
-		padding-right: 0em;
-	}
-}
-@media only screen and (min-width: 768px) {
-	section.ui.segment,
-	footer.ui.segment,
-	#header {
-		padding-left: 4em;
-		padding-right: 4em;
-	}
-}
-@media only screen and (min-width: 992px) {
-	section.ui.segment,
-	footer.ui.segment,
-	#header {
-		padding-left: 8%;
-		padding-right: 8%;
-	}
-}
-@media only screen and (min-width: 1400px) {
-	section.ui.segment,
-	footer.ui.segment,
-	#header {
-		padding-left: 15%;
-		padding-right: 15%;
-	}
-}
-@media only screen and (min-width: 1920px) {
-	section.ui.segment,
-	footer.ui.segment,
-	#header {
-		padding-left: 23%;
-		padding-right: 23%;
-	}
 }
 
 .segment.bcf-color1,
@@ -127,14 +86,12 @@ h1,h2,h3,h4,h5,h6,
 .nav-container {
 	vertical-align: bottom;
 	display: inline-block;
-	width: 600px;
 }
 .nav-container .ui.menu {
 	margin: 0;
 	background: transparent;
 }
 .nav-container .ui.menu .item {
-	font-size: 1.3rem;
 	color: hsl(176, 72%, 50.9804%);
 }
 #header .nav-container .ui.menu .item:hover {
@@ -152,6 +109,7 @@ h1,h2,h3,h4,h5,h6,
 	background: url("assets/images/bg_30.jpg") no-repeat center center;
 	background-size: 1600px;
 }
+
 #intro-container {
 	position: relative;
 	top: 50%;
@@ -176,16 +134,9 @@ h1,h2,h3,h4,h5,h6,
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-@media only screen and (max-width: 767px) {
-	#intro-nav {
-		text-align: center;
-	}
-	#intro-nav li {
-		padding: 0;
-	}
-}
 #intro-nav ol {
 	padding: 0;
+	margin: 0; 
 }
 #intro-nav li {
 	list-style: none;
@@ -362,4 +313,133 @@ span.copyright {
 #contact {
 	box-shadow: none;
 	border-bottom: 1px solid #d4d4d5;
+}
+
+
+@media only screen and (max-width: 600px) {
+	#program .ui.cards > .ui.card {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.invisible-mobile,
+	.ui.stackable.grid > .row > .two.wide.column.invisible-mobile {
+		display: none !important;
+	}
+	#intro-container {
+		padding-top: 50px;
+		position: static;
+		transform: translateY(0);
+	}
+	#intro {
+		height: auto;
+	}
+	#logo {
+		width: 150px;
+		height: 150px;
+	}
+	#intro-nav li {
+		text-align: center;
+		padding: 0;
+	} 
+	#intro-details {
+		position: static;
+		margin-top: 1.5rem;
+		height: 4.5em;
+	}
+	#intro-details span {
+		display: block;
+		line-height: 2.5rem;
+		font-size: 2rem;
+	}
+	#intro-details span.time::before,
+	#intro-details span.location::before,
+	#intro-details span.location::after {
+		content: '';
+		padding: 0; 
+		
+	}
+	#festival-text {
+		position: static;
+		transform: translateY(0);
+	}
+	.buttons {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+	#footer {
+		padding-top: 0em;
+		padding-bottom: 0em;
+	}
+}
+@media only screen and (min-width: 768px) {
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	.nav-container {
+		width: 430px;
+	}
+	.nav-container .ui.menu .item {
+		font-size: 1.0rem;
+	}
+}
+@media only screen and (min-width: 992px) {
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	.nav-container {
+		width: 550px;
+	}
+	.nav-container .ui.menu .item {
+		font-size: 1.3rem;
+	}
+}
+@media only screen and (min-width: 1279px) {
+	.nav-container {
+		width: 790px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	.nav-container {
+		width: 710px;
+	}
+}
+@media only screen and (min-width: 1600px) {
+	#intro {
+		background-size: cover;
+	}
+	.nav-container {
+		width: 910px;
+	}
+}
+@media only screen and (min-width: 1920px) {
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 23%;
+		padding-right: 23%;
+	}
+	.nav-container {
+		width: 750px;
+	}
 }
