@@ -18,7 +18,9 @@ section.ui.segment,
 }
 
 #header,
-#footer {
+#footer,
+#mobile-menu-btn,
+#mobile-menu {
 	background-color: #0f201f !important;
 }
 #footer {
@@ -101,6 +103,27 @@ h1,h2,h3,h4,h5,h6,
 #header .nav-container .ui.menu .item.active {
 	color: black;
 	background-color: hsl(45, 72%, 50.9804%);
+}
+
+#mobile-menu .header-container {
+	display: block;
+	width: 15rem;
+	margin: 1em auto;
+	padding-bottom: 1em;
+}
+#mobile-menu h1 {
+	color: white;
+	font-size: 1.5rem;
+}
+#mobile-menu .menu {
+	margin-left: auto;
+	margin-right: auto;
+}
+#mobile-menu-btn {
+	display: none;
+	top: 100px;
+	z-index: 3;
+	padding-right: 0.2em;
 }
 
 #intro {
@@ -227,11 +250,8 @@ h1,h2,h3,h4,h5,h6,
 	content: '—';
 }
 
-/* add modernizr or viewport rule */
-#festival {
-	position: relative;
-}
 #festival-bg {
+	display: none;
 	position: absolute;
 	top:0;
 	width: 100%;
@@ -242,7 +262,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 #festival-text {
-	position: relative;
+	position: absolute;
 	z-index: 1;
 	color: white;
 	top: 50%;
@@ -263,6 +283,8 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .gallery {
+	position: relative;
+	top: 0;
 	background-color: black;
     height: 100%;
     width: 100% ;
@@ -276,6 +298,7 @@ h1,h2,h3,h4,h5,h6,
     width: auto;
 }
 .flickity-prev-next-button {
+	z-index: 2;
 }
 .flickity-page-dots {
 	bottom: 25px;
@@ -324,6 +347,16 @@ span.copyright {
 }
 
 @media only screen and (max-width: 767px) {
+	#mobile-menu-btn {
+		display: block;
+	}
+	.subheader .time + .location::before {
+		padding-right: 1.8rem;
+	}
+	#festival-bg {
+		display: block;
+	}
+
 	.invisible-mobile,
 	.ui.stackable.grid > .row > .two.wide.column.invisible-mobile {
 		display: none !important;
@@ -365,6 +398,9 @@ span.copyright {
 		position: static;
 		transform: translateY(0);
 	}
+	.cell {
+		display: none;
+	}
 	.buttons {
 		text-align: center;
 		margin-bottom: 4rem;
@@ -388,7 +424,7 @@ span.copyright {
 		padding-right: 4em;
 	}
 	.nav-container {
-		width: 430px;
+		width: 375px;
 	}
 	.nav-container .ui.menu .item {
 		font-size: 1.0rem;
