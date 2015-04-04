@@ -1,37 +1,43 @@
 $(document).ready(function(){
+  /* call resize function */
+  resizeElements();
 
   /* initialize modals */
   $('#support-btn').click(function() {
     $('#support-modal')
       .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
   });
   $('#location-btn').click(function() {
     $('#location-modal')
       .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
   });
   $('#artist1-btn').click(function() {
     $('#artist1')
       .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
   });
   $('#artist2-btn').click(function() {
     $('#artist2')
       .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
   });
   $('#artist3-btn').click(function() {
     $('#artist3')
       .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
   });
   $('#artist4-btn').click(function() {
     $('#artist4')
       .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
   });
   $('#artist5-btn').click(function() {
     $('#artist5')
       .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
   });
-
-  /* call resize function */
-  resizeElements();
 
   /* initialize mobile menu */
   $('#mobile-menu-btn').click(function() {
@@ -133,7 +139,7 @@ $(document).scroll(function() {
   // Version 2: hardcoded
   // Show element after user scrolls 500px
   // but only for not mobile devices.
-if (vpw > 768) {
+if (typeof vpw != 'undefined' && vpw > 768) {
   var y = $(this).scrollTop();
   // check for y > 500
   if (y > vph-200) {
