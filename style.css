@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6,
 #intro {
 	height: 100%;
 	position: relative;
-	background: url("assets/images/bg_30.jpg") no-repeat center center;
+	background: #0f201f url("assets/images/bg_30.jpg") no-repeat center center;
 	background-size: 1600px;
 }
 
