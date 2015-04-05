@@ -113,7 +113,7 @@ h1,h2,h3,h4,h5,h6,
 }
 #mobile-menu h1 {
 	color: white;
-	font-size: 1.49rem;
+	font-size: 1.45rem;
 }
 #mobile-menu .menu {
 	margin-left: auto;
@@ -365,8 +365,11 @@ span.copyright {
 	#mobile-menu-btn {
 		display: block;
 	}
+	.subheader .location {
+		padding-right: 0.6rem;
+	}
 	.subheader .time + .location::before {
-		padding-right: 1.8rem;
+		padding-right: 1.6rem;
 	}
 	#festival-bg {
 		display: block;
@@ -402,7 +405,7 @@ span.copyright {
 	#intro-details span {
 		display: block;
 		line-height: 2.5rem;
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 	#intro-details span.time::before,
 	#intro-details span.location::before,
