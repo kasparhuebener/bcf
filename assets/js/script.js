@@ -138,34 +138,41 @@ function resizeElements() {
   }
 }
 
-/* based on scrolling, show menu bar if not on mobile */
-$(document).scroll(function() {
-  // Version 1: set relative to element
-  // var skrollrInstance = skrollr.get();
-  // var offsetFestival =skrollrInstance.relativeToAbsolute(document.getElementById('#festival'), 'top', 'top');
-  
-  // Version 2: hardcoded
-  // Show element after user scrolls 500px
-  // but only for not mobile devices.
-if (typeof vpw != 'undefined' && vpw >= 768) {
-  /* detect scrolled distance differently for touch devices */
-  var distance;
-  if (Modernizr.touch) {
-    distance = window.pageYOffset;
-  }
-  else {
-    distance = $(this).scrollTop(); 
-  }
-  console.log("distance: "+distance);
-  // check for y > 500
-  if (distance > vph-200) {
-    $('#header')
-      .sidebar('setting','dimPage', false)
-      .sidebar('setting','closable', false)
-      .sidebar('show')
-    ;
-  } else {
-    $('#header').sidebar('hide');
+function toggleHeader() {
+    // Version 1: set relative to element
+    // var skrollrInstance = skrollr.get();
+    // var offsetFestival =skrollrInstance.relativeToAbsolute(document.getElementById('#festival'), 'top', 'top');
+    
+    // Version 2: hardcoded
+    // Show element after user scrolls 500px
+    // but only for not mobile devices.
+  if (typeof vpw != 'undefined' && vpw >= 768) {
+    /* detect scrolled distance differently for touch devices */
+    var distance;
+    if (Modernizr.touch) {
+      distance = window.pageYOffset;
+    }
+    else {
+      distance = $(this).scrollTop(); 
+    }
+    console.log("distance: "+distance);
+    // check for y > 500
+    if (distance > vph-200) {
+      $('#header')
+        .sidebar('setting','dimPage', false)
+        .sidebar('setting','closable', false)
+        .sidebar('show')
+      ;
+    } else {
+      $('#header').sidebar('hide');
+    }
   }
 }
+
+/* based on scrolling, show menu bar if not on mobile */
+$(document).scroll(function() {
+  toggleHeader();
+});
+$(document).bind('touchmove',function(e) {
+  toggleHeader();
 });
