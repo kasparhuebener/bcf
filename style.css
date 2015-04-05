@@ -280,15 +280,9 @@ h1,h2,h3,h4,h5,h6,
   	-moz-user-select: text;
   	-ms-user-select: text;
   	user-select: text;
-  	pointer-events: none;
 }
 #festival-text .ui.grid > .column:not(.row) p {
 	font-size: 1.15rem;
-
-}
-
-.buttons .button {
-	pointer-events: all;
 }
 
 .mapContainer {
