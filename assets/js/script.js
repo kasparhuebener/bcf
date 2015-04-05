@@ -46,6 +46,11 @@ $(document).ready(function(){
       .sidebar('toggle')
     ;
   });
+  $('#mobile-menu a').click(function() {
+    $('#mobile-menu')
+      .sidebar('hide')
+    ;
+  });
 
 });
 
