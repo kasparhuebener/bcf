@@ -155,7 +155,6 @@ function toggleHeader() {
     else {
       distance = $(this).scrollTop(); 
     }
-    console.log("distance: "+distance);
     // check for y > 500
     if (distance > vph-200) {
       $('#header')
