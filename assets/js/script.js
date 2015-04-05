@@ -148,9 +148,16 @@ $(document).scroll(function() {
   // Show element after user scrolls 500px
   // but only for not mobile devices.
 if (typeof vpw != 'undefined' && vpw >= 768) {
-  var y = $(this).scrollTop();
+  /* detect scrolled distance differently for touch devices */
+  var distance;
+  if (Modernizr.touch) {
+    distance = window.pageYOffset;
+  }
+  else {
+    distance = $(this).scrollTop(); 
+  }
   // check for y > 500
-  if (y > vph-200) {
+  if (distance > vph-200) {
     $('#header')
       .sidebar('setting','dimPage', false)
       .sidebar('setting','closable', false)
