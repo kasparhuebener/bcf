@@ -136,8 +136,6 @@ h1,h2,h3,h4,h5,h6,
 #intro-container {
 	position: relative;
 	top: 50%;
-	-o-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -208,6 +206,7 @@ h1,h2,h3,h4,h5,h6,
 	background-color: hsl(45, 72%, 50.9804%);
 	-webkit-transition: -webkit-transform 0.15s;
 	transition: transform 0.15s;
+	-ms-transform: translateY(95%);
 	-webkit-transform: translateY(95%);
 	transform: translateY(95%);
 }
@@ -215,6 +214,7 @@ h1,h2,h3,h4,h5,h6,
 #intro-nav a:hover::before,
 #intro-nav a:focus::before {
 	border-radius: 5px;
+	-ms-transform: translateY(0);
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
 }
@@ -266,8 +266,6 @@ h1,h2,h3,h4,h5,h6,
 	z-index: 1;
 	color: white;
 	top: 50%;
-	-o-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -340,7 +338,8 @@ span.copyright {
 	margin-top: 0.5em;
 }
 
-#tickets .button {
+#tickets .button,
+.buttons .button {
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
 }
@@ -379,6 +378,8 @@ span.copyright {
 	#intro-container {
 		padding-top: 50px;
 		position: static;
+		-ms-transform: translateY(0%);
+		-webkit-transform: translateY(0%);
 		transform: translateY(0);
 	}
 	#intro {
@@ -411,6 +412,8 @@ span.copyright {
 	}
 	#festival-text {
 		position: static;
+		-ms-transform: translateY(0%);
+		-webkit-transform: translateY(0%);
 		transform: translateY(0);
 	}
 	.cell {
@@ -429,6 +432,9 @@ span.copyright {
 	#footer {
 		padding-top: 0em;
 		padding-bottom: 0em;
+	}
+	.ui.small.images img {
+		width: 140px;
 	}
 }
 @media only screen and (min-width: 768px) {
