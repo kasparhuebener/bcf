@@ -96,6 +96,11 @@ h1,h2,h3,h4,h5,h6,
 .nav-container .ui.menu .item {
 	color: hsl(176, 72%, 50.9804%);
 }
+.ui.secondary.menu > .menu > .item,
+.ui.secondary.menu > .item {
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+}
 #header .nav-container .ui.menu .item:hover {
 	color: hsl(45, 72%, 50.9804%);
 	text-decoration: underline;
@@ -449,7 +454,7 @@ span.copyright {
 		padding-right: 4em;
 	}
 	.nav-container {
-		width: 375px;
+		width: 360px;
 	}
 	.nav-container .ui.menu .item {
 		font-size: 1.0rem;
@@ -463,7 +468,7 @@ span.copyright {
 		padding-right: 8%;
 	}
 	.nav-container {
-		width: 550px;
+		width: 530px;
 	}
 	.nav-container .ui.menu .item {
 		font-size: 1.3rem;
@@ -471,7 +476,7 @@ span.copyright {
 }
 @media only screen and (min-width: 1279px) {
 	.nav-container {
-		width: 790px;
+		width: 770px;
 	}
 }
 @media only screen and (min-width: 1400px) {
