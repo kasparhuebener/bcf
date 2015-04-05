@@ -369,7 +369,7 @@ span.copyright {
 		padding-right: 0.8rem;
 	}
 	.subheader .time + .location::before {
-		padding-right: 1.6rem;
+		padding-right: 0.8rem;
 	}
 	#festival-bg {
 		display: block;
