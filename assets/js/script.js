@@ -47,6 +47,37 @@ $(document).ready(function(){
     ;
   });
 
+});
+
+window.onresize = function(event) {
+	resizeElements();
+}
+
+function resizeElements() {
+	vpw = $(window).width();
+	vph = $(window).height();
+
+  /* initialize flickity slideshow*/
+  flkty = $('#festival').flickity({
+    // options
+    cellSelector: '.cell',
+    setGallerySize: false, 
+    wrapAround: true, 
+    autoPlay: 4000,
+    imagesLoaded: true
+  });
+
+  if (vpw > 768) {
+    /* 
+    ** If screen is not mobile, set content height via JS.
+    ** Needed for large screens.
+    */
+	  $('#intro').css({'height': vph + 'px'});
+	  $('.gallery').css({'height': vph + 'px'});
+
+    /* slide show only makes sense on not mobile screens */
+    $('#festival').flickity('resize');
+
   /* initialize skrollr */
   var s = skrollr.init({
     forceHeight: false
@@ -86,37 +117,6 @@ $(document).ready(function(){
           //Do stuff
       }
   });
-});
-
-window.onresize = function(event) {
-	resizeElements();
-}
-
-function resizeElements() {
-	vpw = $(window).width();
-	vph = $(window).height();
-
-  /* initialize flickity slideshow*/
-  flkty = $('#festival').flickity({
-    // options
-    cellSelector: '.cell',
-    setGallerySize: false, 
-    wrapAround: true, 
-    autoPlay: 4000,
-    imagesLoaded: true
-  });
-  //console.log("init flickity");
-
-  if (vpw > 768) {
-    /* 
-    ** If screen is not mobile, set content height via JS.
-    ** Needed for large screens.
-    */
-	  $('#intro').css({'height': vph + 'px'});
-	  $('.gallery').css({'height': vph + 'px'});
-
-    /* slide show only makes sense on not mobile screens */
-    $('#festival').flickity('resize');
   }
   else {
     /* detach .cells from DOM since they are not needed */
