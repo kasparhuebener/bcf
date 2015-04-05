@@ -366,9 +366,10 @@ span.copyright {
 		display: block;
 	}
 	.subheader .location {
+		padding-right: 0.8rem;
 	}
 	.subheader .time + .location::before {
-		padding-right: 1.8rem;
+		padding-right: 1.6rem;
 	}
 	#festival-bg {
 		display: block;
