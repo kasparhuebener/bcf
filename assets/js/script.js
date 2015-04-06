@@ -23,6 +23,11 @@ $(document).ready(function(){
       .modal('show');
     ga('send', 'event', 'button', 'click', this.id);
   });
+  $('#open-stage-btn').click(function() {
+    $('#open-stage')
+      .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
+  });
   $('#artist2-btn').click(function() {
     $('#artist2')
       .modal('show');
