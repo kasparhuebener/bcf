@@ -3,6 +3,11 @@ $(document).ready(function(){
   resizeElements();
 
   /* initialize modals */
+  $('#definition-btn').click(function() {
+    $('#definition-modal')
+      .modal('show');
+    ga('send', 'event', 'button', 'click', this.id);
+  });
   $('#support-btn').click(function() {
     $('#support-modal')
       .modal('show');
@@ -116,12 +121,6 @@ function resizeElements() {
   });
 
   if (vpw >= 768) {
-    /* 
-    ** If screen is not mobile, set content height via JS.
-    ** Needed for large screens.
-    */
-	  $('#intro').css({'height': vph + 'px'});
-	  $('.gallery').css({'height': vph + 'px'});
 
     /* slide show only makes sense on not mobile screens */
     $('#festival').flickity('resize');
@@ -129,9 +128,6 @@ function resizeElements() {
   else {
     /* detach .cells from DOM since they are not needed */
     $('#festival').flickity('destroy');
-
-    $('#intro').removeAttr('style');
-    $('.gallery').removeAttr('style');
 
     /* in case sidebar is open on resize, close */
     $('#header').sidebar('hide');
