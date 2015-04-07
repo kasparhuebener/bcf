@@ -96,8 +96,8 @@ h1,h2,h3,h4,h5,h6,
 }
 .ui.secondary.menu > .menu > .item,
 .ui.secondary.menu > .item {
-	padding-left: 0.7em;
-	padding-right: 0.7em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
 }
 #header .nav-container .ui.menu .item:hover {
 	color: hsl(45, 72%, 50.9804%);
@@ -256,7 +256,6 @@ h1,h2,h3,h4,h5,h6,
 }
 
 #festival-bg {
-	display: none;
 	position: absolute;
 	top:0;
 	width: 100%;
@@ -383,7 +382,9 @@ span.copyright {
 	#festival-bg {
 		display: block;
 	}
-
+	.cell {
+		display: none;
+	}
 	.invisible-mobile,
 	.ui.stackable.grid > .row > .two.wide.column.invisible-mobile {
 		display: none !important;
@@ -430,9 +431,6 @@ span.copyright {
 		-webkit-transform: translateY(0%);
 		transform: translateY(0);
 	}
-	.cell {
-		display: none;
-	}
 	.buttons {
 		text-align: center;
 		margin-bottom: 4rem;
@@ -459,7 +457,7 @@ span.copyright {
 		padding-right: 4em;
 	}
 	.nav-container {
-		width: 360px;
+		width: 355px;
 	}
 	.nav-container .ui.menu .item {
 		font-size: 1.0rem;
@@ -469,6 +467,18 @@ span.copyright {
 		padding-right: 1em;
 	}
 	.buttons .button i {
+		display: none;
+	}
+	#festival-bg {
+		display: none;
+	}
+	.cell {
+		display: block;
+	}
+	.noscript #festival-bg {
+		display: block;
+	}
+	.noscript .cell {
 		display: none;
 	}
 }

@@ -128,10 +128,12 @@ function resizeElements() {
   if (vpw >= 768) {
 
     /* slide show only makes sense on not mobile screens */
+    $('#festival').toggleClass('noscript');
     $('#festival').flickity('resize');
   }
   else {
-    /* detach .cells from DOM since they are not needed */
+    /* hide .cells since they are not needed */
+    $('#festival').toggleClass('noscript');
     $('#festival').flickity('destroy');
 
     /* in case sidebar is open on resize, close */
