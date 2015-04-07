@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
-
 .clearfix::after {
 	content: '';
 	display: block;
@@ -50,7 +48,7 @@ section.ui.segment,
 h1,h2,h3,h4,h5,h6,
 #intro,
 .ui.modal > .header {
-	font-family: "Abril Fatface";
+	font-family: "Abril Fatface", "Book Antiqua", "Palatino", serif;
 }
 #header {
 	border-radius: 0;
