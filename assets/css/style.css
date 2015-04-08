@@ -1,0 +1,540 @@
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0px;
+	clear: both;
+	visibility: hidden;
+}
+
+section.ui.segment,
+#footer {
+	border-radius: 0;
+	margin: 0em auto;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 8%;
+}
+
+#header,
+#footer,
+#mobile-menu-btn,
+#mobile-menu {
+	background-color: #0f201f !important;
+}
+#footer {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+.segment.bcf-color1,
+.bcf-color1 {
+	background-color: #24e1da;
+	background-color: hsl(176, 72%, 50.9804%);
+}
+.segment.bcf-color2,
+.bcf-color2 {
+	background-color: #dcaf28;
+	background-color: hsl(45, 72%, 50.9804%);
+}
+.segment.bcf-color3,
+.button.bcf-color3 {
+	background-color: #cd454a;
+	background-color: hsl(358, 57%, 53.7255%);
+}
+.button.bcf-color3 {
+	color: white;
+}
+
+h1,h2,h3,h4,h5,h6,
+#intro,
+.ui.modal > .header {
+	font-family: "Abril Fatface", "Book Antiqua", "Palatino", serif;
+}
+#header {
+	border-radius: 0;
+	margin: 0em auto;
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 1em;
+}
+.header-container {
+	display: inline-block;
+	vertical-align: bottom;
+}
+.header-container h1 {
+	margin: 0;
+}
+.unstyled-link,
+.unstyled-link:hover,
+.unstyled-link:focus {
+	color: inherit;
+}
+.subheader {
+	display: block;
+	font-size: 0.5em;
+	line-height: 1em;
+}
+
+.subheader .location {
+	display: inline-block;
+	float: right;
+}
+.subheader .time + .location::before {
+	padding-left: 0;
+	padding-right: 2.3rem;
+}
+.nav-container {
+	vertical-align: bottom;
+	display: inline-block;
+}
+.nav-container .ui.menu {
+	margin: 0;
+	background: transparent;
+}
+.nav-container .ui.menu .item {
+	color: hsl(176, 72%, 50.9804%);
+}
+.ui.secondary.menu > .menu > .item,
+.ui.secondary.menu > .item {
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+}
+#header .nav-container .ui.menu .item:hover {
+	color: hsl(45, 72%, 50.9804%);
+	text-decoration: underline;
+}
+#header .nav-container .ui.menu .item.active {
+	color: black;
+	background-color: hsl(45, 72%, 50.9804%);
+}
+
+#mobile-menu .header-container {
+	display: block;
+	width: 17rem;
+	margin: 1em auto;
+	padding-bottom: 1em;
+}
+#mobile-menu h1 {
+	color: white;
+	font-size: 1.5rem;
+}
+#mobile-menu .menu {
+	margin-left: auto;
+	margin-right: auto;
+}
+#mobile-menu-btn {
+	display: none;
+	opacity: 0.8;
+	top: 85px;
+	z-index: 3;
+	padding-right: 0.2em;
+}
+
+#intro {
+	height: 100vh;
+	min-height: 600px;
+	position: relative;
+	background: #0f201f url("../images/bg_30.jpg") no-repeat center center;
+	background-size: 1600px;
+}
+
+#intro-container {
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+#logo {
+	opacity: 0.8;
+	width: 90%;
+}
+#logo:hover {
+	-webkit-filter: hue-rotate(240deg);
+	filter: hue-rotate(240deg);
+}
+#intro-nav {
+	position: relative;
+	z-index: 1; /* needed for setting pseudo-element z-index */
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+#intro-nav ol {
+	padding: 0;
+	margin: 0; 
+}
+#intro-nav li {
+	list-style: none;
+	padding-left: 4rem;
+	margin-bottom: 1rem;
+}
+#intro-nav a {
+	font-size: 3rem;
+	color: #24e1da;
+	color: hsl(176, 72%, 50.9804%);
+	-webkit-transition: color 0.15s;
+	transition: color 0.15s;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	vertical-align: bottom;
+	text-decoration: none;
+	white-space: nowrap;
+}
+#intro-nav a:hover {
+	color: black;
+}
+#intro-nav a::before,
+#intro-nav a::after {
+	pointer-events: none;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+#intro-nav a::before {
+	opacity: 0.8;
+
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #dcaf28;
+	background-color: hsl(45, 72%, 50.9804%);
+	-webkit-transition: -webkit-transform 0.15s;
+	transition: transform 0.15s;
+	-ms-transform: translateY(95%);
+	-webkit-transform: translateY(95%);
+	transform: translateY(95%);
+}
+
+#intro-nav a:hover::before,
+#intro-nav a:focus::before {
+	border-radius: 5px;
+	-ms-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+#intro-details {
+	width: 100%;
+	line-height: 4em;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	bottom: 0;
+	height: 4em;
+	font-size: 2em;
+	color: white;
+	background: -moz-linear-gradient(bottom,  rgba(0,0,0,1.00) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0%,rgba(0,0,0,1.00)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(bottom,  rgba(0,0,0,1.00) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(bottom,  rgba(0,0,0,1.00) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(bottom,  rgba(0,0,0,1.00) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to top,  rgba(0,0,0,1.00) 0%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.time + .location::before {
+	content: '•';
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+#intro-details span.time::before {
+	content: '—';
+	padding-right: 1rem;
+}
+#intro-details span.location::after {
+	padding-left: 1rem;
+	content: '—';
+}
+
+#festival-bg {
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.6;
+	background: black url("../images/slideshow/01_Tanter_Vixen_02.jpg") no-repeat center right;
+	background-size: cover;
+}
+
+#festival-text {
+	position: absolute;
+	z-index: 1;
+	color: white;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	/* text-shadow: 0px 0px 3px black; */
+	-webkit-user-select: text;
+  	-moz-user-select: text;
+  	-ms-user-select: text;
+  	user-select: text;
+}
+#festival-text .ui.grid > .column:not(.row) p {
+	font-size: 1.15rem;
+}
+
+.mapContainer {
+  position: relative;
+  padding-bottom: 70%;
+  height: 0;
+  overflow: hidden;
+}
+.mapContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.gallery {
+	position: relative;
+	top: 0;
+	background-color: black;
+    height: 100vh;
+	min-height: 600px;
+    width: 100%;
+}
+.cell {
+    height: 100%;
+    text-align: center;
+}
+.cell img {
+	opacity: 0.6;
+    height: 100%;
+    width: auto;
+}
+.flickity-prev-next-button {
+	z-index: 2;
+}
+.flickity-page-dots {
+	bottom: 25px;
+}
+
+#program {
+	background: black url("../images/bg_program_black.jpg") no-repeat center center;
+	background-size: cover;
+}
+#program .ui.cards a.ui.card:hover {
+	-webkit-transition: none;
+	transition: none;
+	background-color: hsl(45, 72%, 50.9804%);
+	box-shadow: 0px 3px 0px 0px hsl(45, 72%, 40.9804%), 0px 0px 0px 1px hsl(45, 72%, 50.9804%);
+}
+
+
+.ui.modal > .header {
+	text-shadow: none;
+}
+
+span.copyright {
+	display: inline-block;
+	margin-top: 0.5em;
+}
+
+#tickets .button,
+.buttons .button {
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
+}
+
+#festival,
+#program,
+#tickets,
+#contact {
+	box-shadow: none;
+	border-bottom: 1px solid #d4d4d5;
+}
+
+
+@media only screen and (max-width: 600px) {
+	#program .ui.cards > .ui.card {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#mobile-menu-btn {
+		display: block;
+	}
+	.subheader .location {
+		padding-right: 0.8rem;
+	}
+	.subheader .time + .location::before {
+		padding-right: 0.8rem;
+	}
+	.gallery {
+		min-height: 0;
+		height: auto;
+	}
+	#festival-bg {
+		display: block;
+	}
+	.cell {
+		display: none;
+	}
+	.invisible-mobile,
+	.ui.stackable.grid > .row > .two.wide.column.invisible-mobile {
+		display: none !important;
+	}
+	#intro-container {
+		padding-top: 50px;
+		position: static;
+		-ms-transform: translateY(0%);
+		-webkit-transform: translateY(0%);
+		transform: translateY(0);
+	}
+	#intro {
+		min-height: 0;
+		height: auto;
+	}
+	#logo {
+		width: 150px;
+		height: 150px;
+	}
+	#intro-nav li {
+		text-align: center;
+		padding: 0;
+	} 
+	#intro-details {
+		position: static;
+		margin-top: 1.5rem;
+		height: 4.5em;
+	}
+	#intro-details span {
+		display: block;
+		line-height: 2.5rem;
+		font-size: 1.8rem;
+	}
+	#intro-details span.time::before,
+	#intro-details span.location::before,
+	#intro-details span.location::after {
+		content: '';
+		padding: 0; 
+		
+	}
+	#festival-text {
+		position: static;
+		-ms-transform: translateY(0%);
+		-webkit-transform: translateY(0%);
+		transform: translateY(0);
+	}
+	.buttons {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 0em;
+		padding-right: 0em;
+	}
+	#footer {
+		padding-top: 0em;
+		padding-bottom: 0em;
+	}
+	.ui.small.images img {
+		width: 140px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	.nav-container {
+		width: 355px;
+	}
+	.nav-container .ui.menu .item {
+		font-size: 1.0rem;
+	}
+	.buttons .button {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+	.buttons .button i {
+		display: none;
+	}
+	#festival-bg {
+		display: none;
+	}
+	.cell {
+		display: block;
+	}
+	.noscript #festival-bg {
+		display: block;
+	}
+	.noscript .cell {
+		display: none;
+	}
+}
+@media only screen and (min-width: 992px) {
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 8%;
+		padding-right: 8%;
+	}
+	.nav-container {
+		width: 530px;
+	}
+	.nav-container .ui.menu .item {
+		font-size: 1.3rem;
+	}
+	.buttons .button {
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+	}
+	.buttons .button i {
+		display: inline-block;
+	}
+}
+@media only screen and (min-width: 1279px) {
+	.nav-container {
+		width: 770px;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	.nav-container {
+		width: 710px;
+	}
+}
+@media only screen and (min-width: 1600px) {
+	#intro {
+		background-size: cover;
+	}
+	.nav-container {
+		width: 910px;
+	}
+}
+@media only screen and (min-width: 1920px) {
+	section.ui.segment,
+	#footer,
+	#header {
+		padding-left: 23%;
+		padding-right: 23%;
+	}
+	.nav-container {
+		width: 750px;
+	}
+}
