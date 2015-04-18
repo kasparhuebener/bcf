@@ -150,6 +150,9 @@ function toggleSlideshow() {
     /* slide show only makes sense on not mobile screens */
     $('#festival').toggleClass('noscript');
     $('#festival').flickity('resize');
+
+    /* in case sidebar is open on resize, close */
+    $('#mobile-menu').sidebar('hide');
   }
   else {
     /* hide .cells since they are not needed */
