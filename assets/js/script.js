@@ -21,14 +21,18 @@ $(document).ready(function(){
   initSkrollr();
 });
 
-function checkMaxWidth() {
-  return window.matchMedia("only screen and (min-width: 768px)").matches;
+function isMobile() {
+  return window.matchMedia("only screen and (max-width: 768px)").matches;
+}
+
+function isTablet() {
+  return window.matchMedia("only screen and (max-width: 1024px)").matches;
 }
 
 function initSkrollr() {
   /* if max-width unlike touch device, init skrollr */
     /* initialize skrollr */
-  if (checkMaxWidth()) {
+  if (!isTablet()) {
       var s = skrollr.init({
         forceHeight: false
       });
@@ -146,7 +150,7 @@ function toggleSlideshow() {
     imagesLoaded: true
   });
 
-  if (checkMaxWidth()) {
+  if (!isMobile()) {
     /* slide show only makes sense on not mobile screens */
     $('#festival').toggleClass('noscript');
     $('#festival').flickity('resize');
@@ -169,7 +173,7 @@ function toggleHeader() {
     ** register for the right touch events
     ** and check window.innerHeight
     */ 
-  if (checkMaxWidth()) {
+  if (!isMobile()) {
     var distance = $(this).scrollTop(); 
     
     if (distance > $(window).height()-200) {
