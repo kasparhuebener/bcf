@@ -185,7 +185,8 @@ h1,h2,h3,h4,h5,h6,
 	-webkit-transition: color 0.15s;
 	transition: color 0.15s;
 }
-#intro-nav a:hover {
+#intro-nav a:hover,
+#intro-nav a:focus {
 	color: black;
 }
 #intro-nav a::before {
@@ -334,7 +335,6 @@ h1,h2,h3,h4,h5,h6,
 	box-shadow: 0px 3px 0px 0px hsl(45, 72%, 40.9804%), 0px 0px 0px 1px hsl(45, 72%, 50.9804%);
 }
 
-
 .ui.modal > .header {
 	text-shadow: none;
 }
@@ -452,6 +452,9 @@ span.copyright {
 	.ui.small.images img {
 		width: 140px;
 	}
+	.ui.small.cards > .card {
+		width: 138px;
+	}
 }
 @media only screen and (min-width: 768px) {
 	section.ui.segment,
@@ -487,6 +490,12 @@ span.copyright {
 	}
 	.noscript .cell {
 		display: none;
+	}
+	#people {
+		padding-top: 2em;
+	}
+	.ui.small.cards > .card {
+		width: 150px;
 	}
 }
 @media only screen and (min-width: 992px) {
