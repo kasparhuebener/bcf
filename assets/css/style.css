@@ -38,8 +38,13 @@ section.ui.segment,
 }
 .segment.bcf-color3,
 .button.bcf-color3 {
-	background-color: #cd454a;
+	/*old red*/
+/*	background-color: #cd454a;
 	background-color: hsl(358, 57%, 53.7255%);
+*/
+	/*new more f.lux like red*/
+	background-color: #b52a32;
+	background-color: hsl(357, 62%, 43.7255%);
 }
 .button.bcf-color3 {
 	color: white;
