@@ -285,6 +285,7 @@ h1,h2,h3,h4,h5,h6,
   	-moz-user-select: text;
   	-ms-user-select: text;
   	user-select: text;
+	padding-bottom: 0;
 }
 #festival-text .ui.grid > .column:not(.row) p {
 	font-size: 1.15rem;
@@ -391,14 +392,6 @@ span.copyright {
 #contact {
 	box-shadow: none;
 	border-bottom: 1px solid #d4d4d5;
-}
-
-
-@media only screen and (max-width: 600px) {
-	#program .ui.cards > .ui.card {
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 
 @media only screen and (max-width: 767px) {
