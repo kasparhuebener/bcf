@@ -157,8 +157,6 @@ h1,h2,h3,h4,h5,h6,
 	position: relative;
 	z-index: 1; /* needed for setting pseudo-element z-index */
 	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
 }
 #intro-nav ol {
 	padding: 0;
@@ -173,8 +171,6 @@ h1,h2,h3,h4,h5,h6,
 	font-size: 3rem;
 	color: #24e1da;
 	color: hsl(176, 72%, 50.9804%);
-	-webkit-transition: color 0.15s;
-	transition: color 0.15s;
 	padding-left: 0.1em;
 	padding-right: 0.1em;
 
@@ -185,21 +181,17 @@ h1,h2,h3,h4,h5,h6,
 	vertical-align: bottom;
 	text-decoration: none;
 	white-space: nowrap;
+
+	-webkit-transition: color 0.15s;
+	transition: color 0.15s;
 }
 #intro-nav a:hover {
 	color: black;
 }
-#intro-nav a::before,
-#intro-nav a::after {
-	pointer-events: none;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
-}
 #intro-nav a::before {
 	opacity: 0.8;
 
+	pointer-events: none;
 	content: '';
 	position: absolute;
 	top: 0;
@@ -209,11 +201,12 @@ h1,h2,h3,h4,h5,h6,
 	height: 100%;
 	background-color: #dcaf28;
 	background-color: hsl(45, 72%, 50.9804%);
+
 	-webkit-transition: -webkit-transform 0.15s;
 	transition: transform 0.15s;
 	-ms-transform: translateY(95%);
-	-webkit-transform: translateY(95%);
-	transform: translateY(95%);
+	-webkit-transform: perspective(1px) translateY(95%);
+	transform: perspective(1px) translateY(95%);
 }
 
 #intro-nav a:hover::before,
@@ -222,6 +215,14 @@ h1,h2,h3,h4,h5,h6,
 	-ms-transform: translateY(0);
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
+}
+#intro-copyright {
+	position: absolute;
+	left: 1em;
+	bottom: 1em;
+	font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	color: white;
 }
 #intro-details {
 	width: 100%;
@@ -270,9 +271,9 @@ h1,h2,h3,h4,h5,h6,
 	z-index: 1;
 	color: white;
 	top: 50%;
+	-webkit-transform: perspective(1px) translateY(-50%);
 	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
+	transform: perspective(1px) translateY(-50%);
 	/* text-shadow: 0px 0px 3px black; */
 	-webkit-user-select: text;
   	-moz-user-select: text;
@@ -407,7 +408,10 @@ span.copyright {
 	#intro-nav li {
 		text-align: center;
 		padding: 0;
-	} 
+	}
+	#intro-copyright {
+		display: none;
+	}
 	#intro-details {
 		position: static;
 		margin-top: 1.5rem;
@@ -461,6 +465,9 @@ span.copyright {
 	}
 	.nav-container .ui.menu .item {
 		font-size: 1.0rem;
+	}
+	#intro-copyright {
+		display: block;
 	}
 	.buttons .button {
 		padding-left: 1em;
