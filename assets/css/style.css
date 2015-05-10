@@ -394,6 +394,86 @@ span.copyright {
 	border-bottom: 1px solid #d4d4d5;
 }
 
+#footer .images > .image {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.partners {
+	background-image: url("../images/partners/partners_sprite.png");
+	background-repeat: no-repeat;
+}
+.tiny.partners {
+	background-size: 320px 320px;
+	height: 80px;
+}
+.small.partners {
+	background-size: 600px 600px;
+	height: 150px;
+}
+.medium.partners {
+	background-size: 1200px 1200px;
+	height: 300px;
+}
+.tiny.slim.partners {
+	height: 30px;
+}
+.small.slim.partners {
+	height: 80px;
+}
+.medium.slim.partners {
+	height: 150px;
+}
+.zapf {
+	background-position: 0% 0%;
+}
+.czech {
+	background-position: 33.3333% 0%;
+}
+.hostel {
+	background-position: 66.6667% 0%;
+}
+.schatzinsel {
+	background-position: 100% 0%;
+}
+.tickets {
+	background-position: 0% 33.3333%;
+}
+.inz {
+	background-position: 33.3333% 33.3333%;
+}
+.netzwerk {
+	background-position: 66.6667% 33.3333%;
+}
+.next {
+	background-position: 100% 33.3333%;
+}
+.jtc {
+	background-position: 0% 66.6667%;
+}
+.vuesch {
+	background-position: 33.3333% 66.6667%;
+}
+.forum {
+	background-position: 66.6667% 66.6667%;
+}
+.katakomben {
+	background-position: 100% 66.6667%;
+}
+.zircouplet {
+	background-position: 0% 100%;
+}
+.zirkart {
+	background-position: 33.3333% 100%;
+}
+.labor {
+	background-position: 66.6667% 100%;
+}
+.atemzug {
+	background-position: 100% 100%;
+}
+
+
 @media only screen and (max-width: 767px) {
 	#mobile-menu-btn {
 		display: block;
@@ -477,7 +557,7 @@ span.copyright {
 		padding-top: 0em;
 		padding-bottom: 0em;
 	}
-	.ui.small.images img {
+	.ui.images .small.image {
 		width: 140px;
 	}
 	.ui.small.cards > .card {
