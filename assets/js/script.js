@@ -79,47 +79,47 @@ function initModals() {
   $('#definition-btn').click(function() {
     $('#definition-modal')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'definition');
   });
   $('#support-btn').click(function() {
     $('#support-modal')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'support');
   });
   $('#location-btn').click(function() {
     $('#location-modal')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'location');
   });
   $('#artist1-btn').click(function() {
     $('#artist1')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'artist1');
   });
   $('#open-stage-btn').click(function() {
     $('#open-stage')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'open-stage');
   });
   $('#artist2-btn').click(function() {
     $('#artist2')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'artist2');
   });
   $('#artist3-btn').click(function() {
     $('#artist3')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'artist3');
   });
   $('#artist4-btn').click(function() {
     $('#artist4')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'artist4');
   });
   $('#artist5-btn').click(function() {
     $('#artist5')
       .modal('show');
-    ga('send', 'event', 'button', 'click', this.id);
+    ga('send', 'pageview', 'artist5');
   });
 }
 
