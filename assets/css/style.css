@@ -386,6 +386,10 @@ span.copyright {
 	margin-bottom: 0.2em;
 }
 
+#tickets .ui.large.table {
+	font-size: 1.2em;
+} 
+
 #festival,
 #program,
 #tickets,
