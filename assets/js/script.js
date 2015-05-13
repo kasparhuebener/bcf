@@ -12,7 +12,11 @@ $(document).scroll(function() {
   toggleHeader();
 });
 $(document).bind('touchmove',function(e) {
-  toggleHeader();
+  toggleHeader(); 
+});
+
+$('.slick-next').bind('click',function(e) {
+  console.log(e);
 });
 
 $(document).ready(function(){
@@ -140,28 +144,34 @@ function initMobileMenu() {
 
 function toggleSlideshow() {
 
-  /* initialize flickity slideshow*/
-  flkty = $('#festival').flickity({
+  /* initialize slideshow*/
+  $('#festival .gallery').slick({
     // options
-    cellSelector: '.cell',
-    setGallerySize: false, 
-    wrapAround: true, 
-    autoPlay: 4000,
-    imagesLoaded: true
+    //autoplay: true,
+    autplaySpeed: 4000,
+    dots: true,
+    infinite: true,
+    centerMode: true,
+    variableWidth: true,
+    lazyLoad: 'ondemand',
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: "unslick"
+      }
+    ]
   });
 
   if (!isMobile()) {
     /* slide show only makes sense on not mobile screens */
-    $('#festival').toggleClass('noscript');
-    $('#festival').flickity('resize');
+    //$('#festival').toggleClass('noscript');
 
     /* in case sidebar is open on resize, close */
     $('#mobile-menu').sidebar('hide');
   }
   else {
     /* hide .cells since they are not needed */
-    $('#festival').toggleClass('noscript');
-    $('#festival').flickity('destroy');
+    //$('#festival').toggleClass('noscript');
 
     /* in case sidebar is open on resize, close */
     $('#header').sidebar('hide');

@@ -43,17 +43,18 @@
 
 		<!-- build:css -->
 		<link rel="stylesheet" type="text/css" href="assets/css/semantic.css" media="screen">
-		<link rel="stylesheet" type="text/css" href="assets/css/flickity.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/slick.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
 		<!-- endbuild -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script async src="https://cdn.jsdelivr.net/jquery.slick/1.5.3/slick.min.js"></script>
 		<!-- build:js -->
 		<script defer src="assets/js/sidebar.js"></script>
 		<script defer src="assets/js/transition.js"></script>
 		<script defer src="assets/js/dimmer.js"></script>
 		<script defer src="assets/js/modal.js"></script>
-		<script defer src="assets/js/flickity.pkgd.min.js"></script>
 		<script defer src="assets/js/skrollr.min.js"></script>
 		<script defer src="assets/js/skrollr.menu.min.js"></script>
 		<script defer src="assets/js/script.js"></script>
@@ -176,9 +177,9 @@
 						</span>
 					</div>
 				</div>
-				<div id="festival" class="gallery noscript">
-					<div id="festival-bg"></div>
-					<section id="festival-text" class="ui basic segment" data-menu-offset="-149">
+				<div id="festival-bg"></div>
+				<div id="festival">
+					<section id="festival-text" class="ui basic segment" data-menu-offset="-79">
 						<div class="ui centered stackable grid">
 							<div class="ten wide column">
 								<h2>Das 1. Berlin Circus Festival</h2>
@@ -321,38 +322,40 @@
 							</div>
 						</div>
 					</section>
-					<div class="cell">
-						<img src="assets/images/slideshow/01_Tanter_Vixen_02.jpg" alt="Tanter Companie, Vixen">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/02_CirkLaPutyka_SlapstickSonata_01_wide.jpg" alt="Cirk La Putyka, Slapstick Sonata">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/03_Darragh_01_wide.jpg" alt="Darragh McLoughlin, The Whistle">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/04_CirkLaPutyka_SlapstickSonata_02.jpg" alt="Cirk La Putyka, Slapstick Sonata">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/05_Tanter_Vixen_01.jpg" alt="Tanter Companie, Vixen">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/06_CoVal_01.jpg" alt="Val & Coline, Championnat">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/07_Natalie_01.jpg" alt="Natalie Reckert, image">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/08_Darragh_02_wide.jpg" alt="Darragh McLoughlin, The Whistle">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/09_CirkLaPutyka_SlapstickSonata_04.jpg" alt="Cirk La Putyka, Slapstick Sonata">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/10_Tanter_Vixen_03.jpg" alt="Tanter Companie, Vixen">
-					</div>
-					<div class="cell">
-						<img src="assets/images/slideshow/11_CoVal_02.jpg" alt="Val & Coline, Championnat">
+					<div class="gallery">
+						<div class="cell">
+							<img src="assets/images/slideshow/01_Tanter_Vixen_02.jpg" alt="Tanter Companie, Vixen">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/02_CirkLaPutyka_SlapstickSonata_01_wide.jpg" alt="Cirk La Putyka, Slapstick Sonata">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/03_Darragh_01_wide.jpg" alt="Darragh McLoughlin, The Whistle">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/04_CirkLaPutyka_SlapstickSonata_02.jpg" alt="Cirk La Putyka, Slapstick Sonata">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/05_Tanter_Vixen_01.jpg" alt="Tanter Companie, Vixen">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/06_CoVal_01.jpg" alt="Val & Coline, Championnat">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/07_Natalie_01.jpg" alt="Natalie Reckert, image">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/08_Darragh_02_wide.jpg" alt="Darragh McLoughlin, The Whistle">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/09_CirkLaPutyka_SlapstickSonata_04.jpg" alt="Cirk La Putyka, Slapstick Sonata">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/10_Tanter_Vixen_03.jpg" alt="Tanter Companie, Vixen">
+						</div>
+						<div class="cell">
+							<img src="assets/images/slideshow/11_CoVal_02.jpg" alt="Val & Coline, Championnat">
+						</div>
 					</div>
 				</div>
 				<section id="program" data-menu-offset="-79" class="ui inverted segment">
