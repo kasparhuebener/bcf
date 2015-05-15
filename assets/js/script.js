@@ -26,13 +26,13 @@ function isMobile() {
 }
 
 function isTablet() {
-  return window.matchMedia("only screen and (max-width: 1024px)").matches;
+  return window.matchMedia("only screen and (max-device-width: 1024px)").matches;
 }
 
 function initSkrollr() {
   /* if max-width unlike touch device, init skrollr */
     /* initialize skrollr */
-  if (!isMobile()) {
+  if (!isTablet()) {
       var s = skrollr.init({
         forceHeight: false
       });
