@@ -32,7 +32,7 @@ function isTablet() {
 function initSkrollr() {
   /* if max-width unlike touch device, init skrollr */
     /* initialize skrollr */
-  if (!isTablet()) {
+  if (!isMobile()) {
       var s = skrollr.init({
         forceHeight: false
       });
@@ -43,13 +43,13 @@ function initSkrollr() {
           //skrollr will smoothly animate to the new position using `animateTo`.
           animate: true,
           //The easing function to use.
-          easing: 'sqrt',
+          easing: 'outCubic',
           //Multiply your data-[offset] values so they match those set in skrollr.init
-          scale: 2,
+          //scale: 2,
           //How long the animation should take in ms.
           duration: function(currentTop, targetTop) {
               //By default, the duration is hardcoded at 500ms.
-              //return 700;
+              return 700;
 
               //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
               //return Math.abs(currentTop - targetTop) * 1;
@@ -68,7 +68,13 @@ function initSkrollr() {
           complexLinks: false,
           //This event is triggered right before we jump/animate to a new hash.
           change: function(newHash, newTopPosition) {
-              //Do stuff
+              //flickity gallery wants focus before working.
+              //Programmatically set focus when navigating via skrollr-menu to save 1 click.
+              if (newHash === "#festival") {
+                setTimeout(function() {
+                  $('.gallery').focus();
+                }, 700);
+              };
           }
       });
   }
@@ -120,6 +126,10 @@ function initModals() {
     $('#artist5')
       .modal('show');
     ga('send', 'pageview', 'artist5');
+  });
+  $('.modal .close.icon').click(function(e) {
+    //if modal closed, send another pageview of index page
+    ga('send', 'pageview');
   });
 }
 

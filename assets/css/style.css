@@ -97,7 +97,10 @@ h1,h2,h3,h4,h5,h6,
 	background: transparent;
 }
 .nav-container .ui.menu .item {
+	color: #24e1da;
 	color: hsl(176, 72%, 50.9804%);
+	-webkit-transition: background-color 0.7s !important;
+	transition: background-color 0.7s !important;
 }
 .ui.secondary.menu > .menu > .item,
 .ui.secondary.menu > .item {
@@ -105,11 +108,13 @@ h1,h2,h3,h4,h5,h6,
 	padding-right: 0.6em;
 }
 #header .nav-container .ui.menu .item:hover {
+	color: #dcaf28;
 	color: hsl(45, 72%, 50.9804%);
 	text-decoration: underline;
 }
 #header .nav-container .ui.menu .item.active {
 	color: black;
+	background-color: #dcaf28;
 	background-color: hsl(45, 72%, 50.9804%);
 }
 
@@ -153,6 +158,7 @@ h1,h2,h3,h4,h5,h6,
 #logo {
 	opacity: 0.8;
 	width: 90%;
+	height: 90%;
 }
 #logo:hover {
 	-webkit-filter: hue-rotate(240deg);
@@ -291,13 +297,13 @@ h1,h2,h3,h4,h5,h6,
 	font-size: 1.15rem;
 }
 
-.mapContainer {
+.iframe-container {
   position: relative;
   padding-bottom: 70%;
   height: 0;
   overflow: hidden;
 }
-.mapContainer iframe {
+.iframe-container iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -337,6 +343,7 @@ h1,h2,h3,h4,h5,h6,
 #program .ui.cards a.ui.card:hover {
 	-webkit-transition: none;
 	transition: none;
+	background-color: #dcaf28;
 	background-color: hsl(45, 72%, 50.9804%);
 	box-shadow: 0px 3px 0px 0px hsl(45, 72%, 40.9804%), 0px 0px 0px 1px hsl(45, 72%, 50.9804%);
 }
@@ -449,7 +456,7 @@ span.copyright {
 .netzwerk {
 	background-position: 66.6667% 33.3333%;
 }
-.next {
+.circusnext {
 	background-position: 100% 33.3333%;
 }
 .jtc {
@@ -563,6 +570,14 @@ span.copyright {
 	}
 	.ui.images .small.image {
 		width: 140px;
+	}
+	.small.partners {
+		background-size: 560px 560px;
+		height: 140px;
+	}
+	.ui.small.cards {
+		-webkit-justify-content: center;
+		justify-content: center;
 	}
 	.ui.small.cards > .card {
 		width: 138px;
