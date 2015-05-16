@@ -1,5 +1,6 @@
 window.onload = function(event) {
   /* call slideshow function */
+  aload();
   toggleSlideshow();
 };
 window.onresize = function(event) {

@@ -140,11 +140,17 @@ h1,h2,h3,h4,h5,h6,
 	padding-right: 0.2em;
 }
 
+[data-aload] {
+	background-image: none !important;
+}
+[data-aload][intro-aload] {
+	background-image: url("../images/bg_30_1024.jpg") !important;
+}
 #intro {
 	height: 100vh;
 	min-height: 600px;
 	position: relative;
-	background: #0f201f url("../images/bg_30.jpg") no-repeat center center;
+	background: #0f201f url("../images/bg_30_1920.jpg") no-repeat center center;
 	background-size: 1600px;
 }
 
