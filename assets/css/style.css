@@ -117,6 +117,10 @@ h1,h2,h3,h4,h5,h6,
 	background-color: #dcaf28;
 	background-color: hsl(45, 72%, 50.9804%);
 }
+#language-menu .item {
+	padding-left: 0;
+	padding-right: 0; 
+}
 
 #mobile-menu .header-container {
 	display: block;
@@ -598,8 +602,11 @@ span.copyright {
 		padding-left: 4em;
 		padding-right: 4em;
 	}
+	#header h1 {
+		font-size: 1.5rem;
+	}
 	.nav-container {
-		width: 355px;
+		width: 400px;
 	}
 	.nav-container .ui.menu .item {
 		font-size: 1.0rem;
@@ -645,6 +652,9 @@ span.copyright {
 	#header {
 		padding-left: 8%;
 		padding-right: 8%;
+	}
+	#header h1 {
+		font-size: 2rem;
 	}
 	.nav-container {
 		width: 530px;
