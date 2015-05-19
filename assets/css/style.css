@@ -1,3 +1,27 @@
+html.wf-abrilfatface-n4-loading #logo,
+html.wf-abrilfatface-n4-loading #intro-nav,
+html.wf-abrilfatface-n4-loading #intro-details span {
+	opacity: 0;
+}
+#logo,
+#intro-nav,
+#intro-details span {
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	opacity: 1;
+}
+html.wf-abrilfatface-n4-loading #mobile-menu-btn {
+	position: absolute;
+	left: -50px;
+	opacity: 0;
+}
+#mobile-menu-btn {
+	-webkit-transition: opacity 0.3s, left 0.3s;
+	transition: opacity 0.3s, left 0.3s;
+	left: 0px;
+	opacity: 1;
+}
+
 .clearfix::after {
 	content: '';
 	display: block;
