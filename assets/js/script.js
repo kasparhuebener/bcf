@@ -20,6 +20,10 @@ $(document).ready(function(){
   initModals();
   initMobileMenu();
   initSkrollr();
+
+  $('#tickets a.button').click(function(e) {
+    ga('send','event','ticket','click', e.target.id);
+  });
 });
 
 function isMobile() {
