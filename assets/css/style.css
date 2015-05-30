@@ -441,7 +441,7 @@ span.copyright {
 }
 
 .partners {
-	background-image: url("../images/partners/partners_sprite.png");
+	background-image: url("../images/partners/partners_sprite.png?v2");
 	background-repeat: no-repeat;
 }
 .tiny.partners {
@@ -515,6 +515,9 @@ span.copyright {
 }
 .berlinerfenster {
 	background-position: 0% 100%;
+}
+.fritzkola {
+	background-position: 33.3333% 100%;
 }
 
 
@@ -604,11 +607,11 @@ span.copyright {
 		padding-bottom: 0em;
 	}
 	.ui.images .small.image {
-		width: 138px;
+		width: 135px;
 	}
 	.small.partners {
-		background-size: 552px 690px;
-		height: 138px;
+		background-size: 540px 675px;
+		height: 135px;
 	}
 	.ui.small.cards {
 		-webkit-justify-content: center;
