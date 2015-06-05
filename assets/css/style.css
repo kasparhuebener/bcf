@@ -441,7 +441,7 @@ span.copyright {
 }
 
 .partners {
-	background-image: url("../images/partners/partners_sprite.png?v2");
+	background-image: url("../images/partners/partners_sprite.png?v3");
 	background-repeat: no-repeat;
 }
 .tiny.partners {
@@ -471,7 +471,7 @@ span.copyright {
 .czech {
 	background-position: 33.3333% 0%;
 }
-.hostel {
+.urania {
 	background-position: 66.6667% 0%;
 }
 .schatzinsel {
