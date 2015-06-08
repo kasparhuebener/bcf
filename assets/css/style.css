@@ -441,19 +441,19 @@ span.copyright {
 }
 
 .partners {
-	background-image: url("../images/partners/partners_sprite.png?v3");
+	background-image: url("../images/partners/partners_sprite.png?v4");
 	background-repeat: no-repeat;
 }
 .tiny.partners {
-	background-size: 320px 400px;
+	background-size: 320px 480px;
 	height: 80px;
 }
 .small.partners {
-	background-size: 600px 750px;
+	background-size: 600px 900px;
 	height: 150px;
 }
 .medium.partners {
-	background-size: 1200px 1500px;
+	background-size: 1200px 1800px;
 	height: 300px;
 }
 .tiny.slim.partners {
@@ -478,46 +478,55 @@ span.copyright {
 	background-position: 100% 0%;
 }
 .tickets {
-	background-position: 0% 25%;
+	background-position: 0% 20%;
 }
 .inz {
-	background-position: 33.3333% 25%;
+	background-position: 33.3333% 20%;
 }
 .netzwerk {
-	background-position: 66.6667% 25%;
+	background-position: 66.6667% 20%;
 }
 .circusnext {
-	background-position: 100% 25%;
+	background-position: 100% 20%;
 }
-.jtc {
-	background-position: 0% 50%;
+.institut {
+	background-position: 0% 40%;
 }
 .vuesch {
-	background-position: 33.3333% 50%;
+	background-position: 33.3333% 40%;
 }
 .forum {
-	background-position: 66.6667% 50%;
+	background-position: 66.6667% 40%;
 }
 .katakomben {
-	background-position: 100% 50%;
+	background-position: 100% 40%;
 }
 .zircouplet {
-	background-position: 0% 75%;
+	background-position: 0% 60%;
 }
 .zirkart {
-	background-position: 33.3333% 75%;
+	background-position: 33.3333% 60%;
 }
 .labor {
-	background-position: 66.6667% 75%;
+	background-position: 66.6667% 60%;
 }
 .atemzug {
-	background-position: 100% 75%;
+	background-position: 100% 60%;
 }
 .berlinerfenster {
-	background-position: 0% 100%;
+	background-position: 0% 80%;
 }
 .fritzkola {
-	background-position: 33.3333% 100%;
+	background-position: 33.3333% 80%;
+}
+.stadtkind {
+	background-position: 66.6667% 80%;
+}
+.chamaeleon {
+	background-position: 100% 80%;
+}
+.druckhaus {
+	background-position: 0% 100%;
 }
 
 
