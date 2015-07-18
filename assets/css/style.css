@@ -441,7 +441,7 @@ span.copyright {
 }
 
 .partners {
-	background-image: url("../images/partners/partners_sprite.png?v4");
+	background-image: url("../images/partners/partners_sprite.png?v5");
 	background-repeat: no-repeat;
 }
 .tiny.partners {
@@ -527,6 +527,12 @@ span.copyright {
 }
 .druckhaus {
 	background-position: 0% 100%;
+}
+.zukunftsfonds {
+	background-position: 33.3333% 100%;
+}
+.berlinerprogramm {
+	background-position: 66.6667% 100%;
 }
 
 
@@ -619,7 +625,7 @@ span.copyright {
 		width: 135px;
 	}
 	.small.partners {
-		background-size: 540px 675px;
+		background-size: 540px 810px;
 		height: 135px;
 	}
 	.ui.small.cards {
