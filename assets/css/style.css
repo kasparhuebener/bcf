@@ -441,7 +441,7 @@ span.copyright {
 }
 
 .partners {
-	background-image: url("../images/partners/partners_sprite.png?v5");
+	background-image: url("../images/partners/partners_sprite.png");
 	background-repeat: no-repeat;
 }
 .tiny.partners {
@@ -533,6 +533,9 @@ span.copyright {
 }
 .berlinerprogramm {
 	background-position: 66.6667% 100%;
+}
+.yelp {
+	background-position: 100% 100%;
 }
 
 
