@@ -153,6 +153,32 @@
 		<div id="mobile-menu-btn" class="ui fixed right attached big black button"><i class="content icon"></i></div>
 		<div id="skrollr-body" class="pusher">
 			<main>
+				<div id="thanks-modal" class="ui large modal">
+					<i class="close icon"></i>
+					<div class="content">
+						<div class="description" style="text-align: center;">
+							<img class="ui image" src="assets/images/thanks.jpg" alt="Nach der Show ist vor der Show.">
+							<h2>
+								Tausend Dank!
+							</h2>
+							<p>
+								Das 1. Berlin Circus Festival war großartig. Wir möchten uns bei allen Sponsoren,<br>
+								Mitwirkenden, Künstlern bedanken und bei euch, dem Publikum! 
+							</p>
+							<p>
+								Ihr alle habt dieses Festival zu einer einzigartigen Erfahrung werden lassen!<br>
+								Die Reaktionen waren allerseits so positiv, dass uns nur noch zu sagen bleibt: 
+							</p>
+							<h3>
+								Wir freuen uns auf nächstes Jahr - auf die 2. Edition des Berlin Circus Festivals.
+							</h3>
+							<p style="font-size: smaller;">
+							<br>
+								Folgt uns auf <a href="https://www.facebook.com/pages/Berlin-Circus-Festival/669500923158454" target="_blank" title="Zur Facebook-Seite von BCF"><i class="facebook icon"></i>Facebook</a> und haltet euch über Termine, Künstler und alles, was wir demnächst bekanntgeben werden, auf dem Laufenden.
+							</p>
+						</div>
+					</div>
+				</div>
 				<div id="intro">
 					<div id="intro-container" class="ui stackable page middle aligned grid">
 						<div class="row">
@@ -679,24 +705,6 @@
 					<div class="ui stackable grid">
 						<div class="column">
 							<h1>Tickets</h1>
-							<div class="ui icon yellow message">
-								<i class="ticket icon"></i>
-								<div class="content">
-									<div class="header">
-										La pre-vente à commencé! Achetez-vos billets maintenant!
-									</div>
-									<p>
-										Attention, les billets “tout temps” sont limité! Pour plus des infos, <a href="https://www.facebook.com/pages/Berlin-Circus-Festival/669500923158454" title="Zur Facebook-Seite vom Berlin Circus Festival" target="_blank">suivez nous sur <i class="facebook icon"></i> Facebook</a>.<br><br>
-										Dès maintenant vous pouvez également reserver vos billets!<br><br>
-										Envoyez un mail: <a href="mailto:tickets@berlin-circus-festival.de?subject=Ticketreservierung&body=Nom:%0D%0ADate:%0D%0ANombre%20de%20Billets:">tickets@berlin-circus-festival.de</a>.<br>
-										Donnez-nous le NOM, DATE et le nombre de billets. Vous allez recevoir une confirmation le même jour.
-										<br>
-										Reservations par telephone: +49 (0) 177 3631 020 (de 11.00 - 17.00)
-										<br><br>
-										Venez chercher vos billets jusqu’à 20 min avant les spectacles commencent.
-									</p>
-								</div>
-							</div>
 							<p>
 								Les spectacles sont adaptés aux enfants de plus de 6 ans.<br>
 								Nous serons ravis de vous accueillir plus tôt 1,5h avant le spectacle commence.
@@ -714,7 +722,7 @@
 										<td>04.09.2015 19<sup>30</sup></td>
 										<td>Slapstick Sonata - Cirk La Putyka (CZ)</td>
 										<td class="center aligned">
-											<a id="btn-150904" class="ui large button" href="http://berlin-circus-festival.tickets.de/en/events/6214-Cirk_La_Putyka_mit_Slapstick_Sonata_" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
+											<a id="btn-150904" class="ui disabled large button" href="http://berlin-circus-festival.tickets.de/en/events/6214-Cirk_La_Putyka_mit_Slapstick_Sonata_" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
 											<!-- <a class="ui large button" href="#" title="Sonnenscheintickets">Sonnenscheintickets</a> -->
 										</td>
 									</tr>
@@ -722,14 +730,14 @@
 										<td>05.09.2015 19<sup>30</sup></td>
 										<td>Slapstick Sonata - Cirk La Putyka (CZ)</td>
 										<td class="center aligned">
-											<a id="btn-150905" class="ui large button" href="http://berlin-circus-festival.tickets.de/en/events/6214-Cirk_La_Putyka_mit_Slapstick_Sonata_" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
+											<a id="btn-150905" class="ui disabled large button" href="http://berlin-circus-festival.tickets.de/en/events/6214-Cirk_La_Putyka_mit_Slapstick_Sonata_" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
 										</td>
 									</tr>
 									<tr>
 										<td>06.09.2015 18<sup>00</sup></td>
 										<td>Slapstick Sonata - Cirk La Putyka (CZ)</td>
 										<td class="center aligned">
-											<a id="btn-150906" class="ui large button" href="http://berlin-circus-festival.tickets.de/en/events/6214-Cirk_La_Putyka_mit_Slapstick_Sonata_" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
+											<a id="btn-150906" class="ui disabled large button" href="http://berlin-circus-festival.tickets.de/en/events/6214-Cirk_La_Putyka_mit_Slapstick_Sonata_" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
 										</td>
 									</tr>
 									<tr>
@@ -743,14 +751,14 @@
 										<td>08.09.2015 19<sup>30</sup></td>
 										<td>Plateau Partagé - Courts *</td>
 										<td class="center aligned">
-											<a id="btn-150908" class="ui large button" href="http://berlin-circus-festival.tickets.de/en/events/6220-Plateau_partag%C3%A9_-_Kurzstuecke/" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
+											<a id="btn-150908" class="ui disabled large button" href="http://berlin-circus-festival.tickets.de/en/events/6220-Plateau_partag%C3%A9_-_Kurzstuecke/" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
 										</td>
 									</tr>
 									<tr>
 										<td>09.09.2015 19<sup>30</sup></td>
 										<td>Plateau Partagé - Courts *</td>
 										<td class="center aligned">
-											<a id="btn-150909" class="ui large button" href="http://berlin-circus-festival.tickets.de/en/events/6220-Plateau_partag%C3%A9_-_Kurzstuecke" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
+											<a id="btn-150909" class="ui disabled large button" href="http://berlin-circus-festival.tickets.de/en/events/6220-Plateau_partag%C3%A9_-_Kurzstuecke" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
 										</td>
 									</tr>
 									<tr>
@@ -764,21 +772,21 @@
 										<td>11.09.2015 19<sup>30</sup></td>
 										<td>Vixen - Tanter (NO, SWE, DEN)</td>
 										<td class="center aligned">
-											<a id="btn-150911" class="ui large button" href="http://berlin-circus-festival.tickets.de/en/events/6217-Tanter_mit_Vixen" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
+											<a id="btn-150911" class="ui disabled large button" href="http://berlin-circus-festival.tickets.de/en/events/6217-Tanter_mit_Vixen" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
 										</td>
 									</tr>
 									<tr>
 										<td>12.09.2015 19<sup>30</sup></td>
 										<td>Vixen - Tanter (NO, SWE, DEN)</td>
 										<td class="center aligned">
-											<a id="btn-150912" class="ui large button" href="http://berlin-circus-festival.tickets.de/en/events/6217-Tanter_mit_Vixen" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
+											<a id="btn-150912" class="ui disabled large button" href="http://berlin-circus-festival.tickets.de/en/events/6217-Tanter_mit_Vixen" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
 										</td>
 									</tr>
 									<tr>
 										<td>13.09.2015 18<sup>00</sup></td>
 										<td>Vixen - Tanter (NO, SWE, DEN)</td>
 										<td class="center aligned">
-											<a id="btn-150913" class="ui large button" href="http://berlin-circus-festival.tickets.de/en/events/6217-Tanter_mit_Vixen" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
+											<a id="btn-150913" class="ui disabled large button" href="http://berlin-circus-festival.tickets.de/en/events/6217-Tanter_mit_Vixen" title="Tickets bei Tickets.de" target="_blank">Tickets</a>
 										</td>
 									</tr>
 								</tbody>

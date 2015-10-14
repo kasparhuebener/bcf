@@ -17,6 +17,8 @@ $(document).bind('touchmove',function(e) {
 });
 
 $(document).ready(function(){
+  $('#thanks-modal')
+      .modal('show');
   initModals();
   initMobileMenu();
   initSkrollr();

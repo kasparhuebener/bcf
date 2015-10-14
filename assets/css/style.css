@@ -170,6 +170,17 @@ h1,h2,h3,h4,h5,h6,
 [data-aload][intro-aload] {
 	background-image: url("../images/bg_30_1024.jpg") !important;
 }
+
+#thanks-modal {
+}
+@media only screen and (max-width: 992px) {
+	#thanks-modal .close.icon {
+		opacity: 1;
+		background-color: white;
+		border-radius: 3px;
+	}
+}
+
 #intro {
 	height: 100vh;
 	min-height: 600px;
